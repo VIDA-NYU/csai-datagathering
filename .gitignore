@@ -1,0 +1,39 @@
+node_modules/
+public/
+
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+lib
+lib64
+
+# Notebook checkpoints
+.ipynb_checkpoints
+
+# ViM
+.*.swp
+
+# Emacs
+\#*#
+
+# OS files
+.DS_Store
+desktop.ini
+
+# Archives
+# *.zip
+
+# Vagrant
+.vagrant
+
+.vscode
+**/.vscode
