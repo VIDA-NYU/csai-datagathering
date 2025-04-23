@@ -37,3 +37,6 @@ desktop.ini
 
 .vscode
 **/.vscode
+
+# Data
+.csv
