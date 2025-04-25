@@ -44,3 +44,6 @@ desktop.ini
 
 # Ignore all CSV files in the project
 **/*.csv
+
+# Ignore Hugging Face token file
+upload_to_hugging_face/token.txt
