@@ -26,7 +26,8 @@ lib64
 \#*#
 
 # OS files
-.DS_Store
+# Ignore all .DS_Store files in the project
+**/.DS_Store
 desktop.ini
 
 # Archives
@@ -40,3 +41,6 @@ desktop.ini
 
 # Data
 .csv
+
+# Ignore all CSV files in the project
+**/*.csv

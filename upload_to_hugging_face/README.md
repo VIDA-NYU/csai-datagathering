@@ -4,6 +4,32 @@ This folder contains scripts and documentation for uploading datasets from this 
 
 ---
 
+## Using the Bash Script (Simplest)
+
+You can use the provided bash script to upload your dataset without modifying any Python files. Pass the required parameters directly to the script.
+
+### Steps:
+1. Run the script with the required parameters:
+   ```bash
+   bash /fullpath/to/upload_csv_hugging_face.sh "<HUGGING_FACE_TOKEN>" "<ORGANIZATION>" "<REPO_NAME>" "<CSV_FILE_PATH>"
+   ```
+
+   Example:
+   ```bash
+   bash /Users/soniacq/Urban/csai-datagathering/upload_to_hugging_face/upload_csv_hugging_face.sh "<hf_your_actual_token_here>" "oscur" "test5-pluto" "/Users/soniacq/Downloads/pluto.csv"
+   ```
+
+This will:
+- Create the repository if it doesn't already exist.
+- Upload the dataset to the Hugging Face Hub.
+
+> **Note**: If you want to run the script directly (e.g., `./upload_csv_hugging_face.sh`), ensure it is executable by running:
+> ```bash
+> chmod +x upload_csv_hugging_face.sh
+> ```
+
+---
+
 ## Automated Process (Recommended)
 
 To automate the process of uploading a dataset to Hugging Face, note that creating the actual repository on Hugging Face currently requires manual interaction through the web interface. However, once the repository is created, the rest of the upload process can be automated using scripts.
@@ -16,14 +42,39 @@ Go to [huggingface.co/new](https://huggingface.co/new) and create a new reposito
 
 ### 2. Place Your Dataset
 
-Ensure your dataset is in a folder (e.g., `traffic_data/`) and in one of the following formats:
+Create a folder appropriate to your dataset and move your data into it. Use the following commands:
+
+```bash
+mkdir <new_directory_for_data>
+mv <path_to_data> ./<new_directory_for_data>
+```
+
+For example:
+
+```bash
+mkdir pluto_data
+mv /Users/soniacq/Downloads/pluto.csv ./pluto_data
+```
+
+Ensure your dataset is in one of the following formats:
 - CSV, TSV, JSON
 - Text files or image folders
 - Parquet
 
 ### 3. Duplicate and Modify the Template Script
 
-1. Duplicate the `upload_data_template.py` script and rename it appropriately (e.g., `upload_traffic_volume_counts_data.py`).
+1. Duplicate the `upload_data_template.py` script and rename it appropriately. Use the following command:
+
+   ```bash
+   cp upload_data_template.py <new_script_name>.py
+   ```
+
+   For example:
+
+   ```bash
+   cp upload_data_template.py upload_traffic_volume_counts_data.py
+   ```
+
 2. Edit the duplicated script to set the following variables:
    - `local_dataset_path`: Path to the folder containing your dataset (e.g., `./traffic_volume_counts_sample_data`).
    - `csv_filename`: Name of your dataset file (e.g., `sample_traffic.csv`).
@@ -33,13 +84,19 @@ Ensure your dataset is in a folder (e.g., `traffic_data/`) and in one of the fol
 
 ### 4. Run the Script
 
-Ensure you have a Hugging Face token. Contact OSCUR members or Sonia Castelo (scq202@nyu.edu) to get the token. Then, run the script you created in Step 3. For example:
+Ensure you have a Hugging Face token. Contact OSCUR members or Sonia Castelo (scq202@nyu.edu) to get the token. Then, run the script you created in Step 3. Use the following command:
+
+```bash
+python <new_script_name>.py
+```
+
+For example:
 
 ```bash
 python upload_traffic_volume_counts_data.py
 ```
 
-Replace `upload_traffic_volume_counts_data.py` with the name of the script you created.
+Replace `<new_script_name>.py` with the name of the script you created.
 
 The script will:
 1. Automatically generate a `README.md` and `dataset_script.py` for your dataset.
