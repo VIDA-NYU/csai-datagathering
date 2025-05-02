@@ -20,7 +20,7 @@ intersection format e.g., T, X, multi-leg, roundabout)
 - [ ] Sidewalks, crosswalks, driveways, curb ramps, medians, refuges, curb extensions
 - [ ] Transit stop accessibility (ADA) features (ramp deployment clear space, tactile warning strips)
 - [ ] Bicycle facilities and facility type (unmarked, unseparated, and separated facilities; intersection-approach and through-intersection treatments)
-- [ ] Speed management countermeasures (speed humps, speed tables, raised intersections)
+- [x] Speed management countermeasures (speed humps, speed tables, raised intersections) Note: We are considering speed humps and speed tables as the same data for NYC.
 - [ ] Sidewalk surface condition (roughness, cracking, heaving)
 - [ ] Fixed obstructions within pedestrian and bicycle facilities (utility poles, signposts)
 - [ ] On-street curb management (parking, loading, and delivery, including freight)
@@ -36,12 +36,12 @@ Generally available data:
 Data elements to generate or enhance:
 - [ ] Vehicle volumes and types (cars, trucks, freight, other)
 - [ ] Vehicle operating speeds and speed distributions
-- [ ] Injuries, injury severity, and near misses
+- [x] **WIP (Sonia)** Injuries, injury severity, and near misses
 - [ ] Bicycle and pedestrian user and/or trip counts
 - [ ] Transit ridership
 
 Generally available data:
-- [ ] Crash data (fatalities, location, crash rate, roadway classification and contexts, and crash severity)
+- [x] **WIP (Sonia)** Crash data (fatalities, location, crash rate, roadway classification and contexts, and crash severity)
 ---
 
 ### 🌆 Context
@@ -55,7 +55,7 @@ Generally available data:
 - [ ] Housing and employment density
 - [ ] Environment (surface heat index, green space, open space)
 - [ ] Social determinants of health
-- [ ] Socio-economic and demographic data
+- [x] **WIP (Sonia)** Socio-economic and demographic data
 - [ ] Environmental Justice and transportation disadvantaged communities
 - [ ] Topography
 - [ ] Designated goods movement (freight) routes
