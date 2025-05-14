@@ -1,65 +1,32 @@
-# csai-datagathering
-
-This repository tracks the progress of data generation and enhancement for the USDOT Complete Streets Artificial Intelligence (CSAI) Initiative — Phase I. The goal is to generate geospatial datasets across three key categories: **Infrastructure**, **Traveler Behavior/Safety**, and **Context**, to support decision-making tools for multimodal transportation planning.
-
-📍 **Phase I Goal:** Generate data layers covering a geographic area of at least 250,000 people, incorporating the widest possible set of elements from Table 2.
-
----
-
-## ✅ Progress Checklist: Table 2 Data Elements
-
-### 🛣️ Infrastructure
-Data elements to generate or enhance:
-- [ ] Roadway features
-  - [ ] Centerline roadway network
-  - [ ] Travel direction, number of lanes, lane markings and widths, shoulder width, edge condition barriers, guardrails.
-  - [ ] Mid-block, intersection-approach, and through-intersection conditions (turn radii, turn lanes, intersection markings,
-intersection format e.g., T, X, multi-leg, roundabout)
-- [ ] Signals, markings, signs (including posted speed limits)
-- [ ] Signal timing and phasing
-- [ ] Sidewalks, crosswalks, driveways, curb ramps, medians, refuges, curb extensions
-- [ ] Transit stop accessibility (ADA) features (ramp deployment clear space, tactile warning strips)
-- [ ] Bicycle facilities and facility type (unmarked, unseparated, and separated facilities; intersection-approach and through-intersection treatments)
-- [x] Speed management countermeasures (speed humps, speed tables, raised intersections) Note: We are considering speed humps and speed tables as the same data for NYC.
-- [ ] Sidewalk surface condition (roughness, cracking, heaving)
-- [ ] Fixed obstructions within pedestrian and bicycle facilities (utility poles, signposts)
-- [ ] On-street curb management (parking, loading, and delivery, including freight)
-- [ ] Multi-use paths and traversable public open spaces
-
-Generally available data:
-- [ ] Transit stops and routes
-- [ ] Rail routes and crossings
+<div align="center">
+   <h1>CSAI Data Gathering</h1>
+   <h3>Tracking Dataset Generation for `CSAI` Initiative — Phase I</h3>
+   <p><i>Supporting multimodal transportation planning with geospatial datasets</i></p>
+   <p>
+      <img src="https://img.shields.io/static/v1?label=HuggingFace&message=oscur&color=FFD21E&style=for-the-badge&logo=huggingface&logoColor=white" alt="HuggingFace oscur">
+      <img src="https://img.shields.io/static/v1?label=Python&message=3.8%2B&color=3776AB&style=for-the-badge&logo=python&logoColor=white" alt="Python 3.8+">
+   </p>
+</div>
 
 ---
 
-### 🚶 Traveler Behavior / Safety
-Data elements to generate or enhance:
-- [ ] Vehicle volumes and types (cars, trucks, freight, other)
-- [ ] Vehicle operating speeds and speed distributions
-- [x] **WIP (Sonia)** Injuries, injury severity, and near misses
-- [ ] Bicycle and pedestrian user and/or trip counts
-- [ ] Transit ridership
+This repository tracks the progress of data generation and enhancement for the `USDOT Complete Streets Artificial Intelligence` (CSAI) Initiative — Phase I. The goal is to generate geospatial datasets across three key categories: **Infrastructure**, **Traveler Behavior/Safety**, and **Context**, to support decision-making tools for multimodal transportation planning.
 
-Generally available data:
-- [x] **WIP (Sonia)** Crash data (fatalities, location, crash rate, roadway classification and contexts, and crash severity)
----
+📍 **Phase I Goal:** Generate data layers covering a geographic area of at least 250,000 people, incorporating the widest possible set of elements from Table 2. For detailed progress tracking, refer to the [GitHub issue](https://github.com/VIDA-NYU/csai-datagathering/issues/1).
 
-### 🌆 Context
-Data elements to generate or enhance:
-- [ ] Land use (residential, commercial, industrial, civic, academic, mixed-use)
-• Tree cover/landscaping (including shade)
-• Urban design/frontage (including adjacent site design and building setback)
+🤗 All datasets uploaded are available on our **[HuggingFace Hub](https://huggingface.co/oscur)**.  
 
-Generally available data:
-- [ ] Key destinations (healthcare, academic, civic, employment, retail-commercial, recreation)
-- [ ] Housing and employment density
-- [ ] Environment (surface heat index, green space, open space)
-- [ ] Social determinants of health
-- [x] **WIP (Sonia)** Socio-economic and demographic data
-- [ ] Environmental Justice and transportation disadvantaged communities
-- [ ] Topography
-- [ ] Designated goods movement (freight) routes
+## 🚀 Getting Started
 
----
+- **Dataset Uploads:** To upload datasets to the `HuggingFace Hub`, follow the instructions in [upload_to_hugging_face/README.md](upload_to_hugging_face/README.md).
+- **Dataset Format:** Use the provided [dataset_script_template.py](dataset_script_template.py) as a starting point for structuring datasets compatible with HuggingFace’s `datasets` library.
 
-> 🧠 **Note**: Checkboxes will be updated as progress is made in sourcing, generating, and validating the data. Contributions and issues welcome!
+## 🤝 Contributing
+
+We welcome contributions to enhance the dataset collection and improve the tools! Please:
+- Check the [GitHub issue](https://github.com/VIDA-NYU/csai-datagathering/issues/1) for current progress and to avoid duplicating efforts.
+- Submit pull requests with new datasets, scripts, or documentation updates.
+
+## 📜 License
+
+This project is licensed under the Apache License, Version 2.0. See the [LICENSE](LICENSE) file for details.
