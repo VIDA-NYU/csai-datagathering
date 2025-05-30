@@ -1,0 +1,42 @@
+"dataset_id": "jknp-skuy"
+"name": "VZV_Speed Humps"
+"description": "Speed Humps are a raised area of a roadway designed to reduce vehicle\
+  \ speeds. Dates reflect the first time a speed hump was installed at a location,\
+  \ subsequent removals and/or re-installations are not included."
+"source_organization": "New York City Department of Transportation (NYC DOT)"
+"domain": "transportation"
+"last_updated": "2025-05-01"
+"update_frequency": "Monthly"
+"access":
+  "primary_url": "https://data.cityofnewyork.us/d/jknp-skuy"
+  "api_endpoint": "https://data.cityofnewyork.us/resource/jknp-skuy.json"
+  "license": "Open Data License"
+  "file_format":
+  - "CSV"
+  - "JSON"
+  "rate_limits": "Unknown"
+"spatial":
+  "geometry_type": "line"
+  "coordinate_system": "EPSG:4326"
+  "coverage_area": "NYC"
+"temporal":
+  "temporal_type": "static"
+  "temporal_resolution": "N/A"
+  "time_column": ""
+"implementation":
+  "downloader_module": "downloaders.jknp-skuy"
+  "processor_module": "processors.jknp-skuy"
+  "example_notebook": "examples/jknp-skuy_example.ipynb"
+"integration_opportunities":
+  "spatial_joins":
+    - "NYC street centerlines"
+    - "Neighborhood slow zones"
+  "temporal_alignment":
+    - "Traffic incident data"
+    - "Pedestrian injury statistics"
+"map_algebra":
+  "raster_conversion":
+    suitable_for_rasterization: true
+    recommended_cell_size: "10 meters"
+    interpolation_method: "nearest neighbor"
+"data_name": "speed_humps"

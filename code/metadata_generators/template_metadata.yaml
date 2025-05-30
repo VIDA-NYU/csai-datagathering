@@ -1,0 +1,41 @@
+# template_metadata.yaml
+
+dataset_id: ""
+name: ""
+description: ""
+source_organization: ""
+domain: ""
+last_updated: ""
+update_frequency: ""
+
+access:
+  primary_url: ""
+  api_endpoint: ""
+  license: ""
+  file_format: []
+  rate_limits: ""
+
+spatial:
+  geometry_type: ""
+  coordinate_system: ""
+  coverage_area: ""
+
+temporal:
+  temporal_type: ""
+  temporal_resolution: ""
+  time_column: ""
+
+implementation:
+  downloader_module: ""
+  processor_module: ""
+  example_notebook: ""
+
+integration_opportunities:
+  spatial_joins: []
+  temporal_alignment: []
+
+map_algebra:
+  raster_conversion:
+    suitable_for_rasterization: # true or false
+    recommended_cell_size: ""
+    interpolation_method: ""
