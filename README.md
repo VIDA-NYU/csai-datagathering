@@ -22,6 +22,7 @@ This repository tracks the progress of data generation and enhancement. The goal
 OSCUR-data/
 ├── metadata/                 # YAML specifications describing each data source
 ├── code/                     # Scripts to download, process, and upload data
+│   ├── metadata_generators/     # Generate standardized metadata YAML files
 │   ├── downloaders/             # Raw data acquisition from various APIs
 │   ├── processors/              # Data cleaning, transformation, and validation
 │   └── upload_to_hugging_face/  # Utilities for uploading datasets to Hugging Face
@@ -39,6 +40,10 @@ To contribute a new dataset to this repository, follow these steps:
 - Be sure to complete all required metadata fields.
 
 **2. Code**
+- **Metadata Generators:**
+   - Add or modify scripts in [code/metadata_generators](./code/metadata_generators/) to generate standardized YAML metadata files.
+   - These scripts can use NYC Open Data APIs or other APIs to extract metadata and save it in the [metadata/](./metadata) directory.
+
 - **Downloaders:**
    - Add a ``Python`` script that collects raw data from the source to [code/downloaders](./code/downloaders/).
    - If multiple scripts are needed, create a subdirectory named after the dataset ID (e.g., ``code/downloaders/your_dataset_id/``).
