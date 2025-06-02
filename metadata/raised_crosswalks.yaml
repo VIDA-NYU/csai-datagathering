@@ -1,0 +1,38 @@
+"dataset_id": "uh2s-ftgh"
+"name": "Raised Crosswalk Locations"
+"description": "A list of raised crosswalk locations throughout New York City."
+"source_organization": "New York City Department of Transportation (NYC DOT)"
+"domain": "transportation"
+"last_updated": "2025-05-09"
+"update_frequency": "Monthly"
+"access":
+  "primary_url": "https://data.cityofnewyork.us/d/uh2s-ftgh"
+  "api_endpoint": "https://data.cityofnewyork.us/resource/uh2s-ftgh.json"
+  "license": "Open Data License"
+  "file_format":
+  - "CSV"
+  - "JSON"
+  "rate_limits": "Unknown"
+"spatial":
+  "geometry_type": "point"
+  "coordinate_system": "EPSG:4326"
+  "coverage_area": "NYC"
+"temporal":
+  "temporal_type": "static"
+  "temporal_resolution": "N/A"
+  "time_column": ""
+"implementation":
+  "downloader_module": "downloaders.uh2s-ftgh"
+  "processor_module": "processors.uh2s-ftgh"
+  "example_notebook": "examples/uh2s-ftgh_example.ipynb"
+"integration_opportunities":
+  "spatial_joins":
+  - "street centerline datasets"
+  - "pedestrian accident data"
+  "temporal_alignment": []
+"map_algebra":
+  "raster_conversion":
+    "suitable_for_rasterization": false
+    "recommended_cell_size": ""
+    "interpolation_method": ""
+"data_name": "raised_crosswalks"

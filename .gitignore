@@ -47,3 +47,7 @@ desktop.ini
 
 # Ignore Hugging Face token file
 upload_to_hugging_face/token.txt
+
+# Ignore any folder named 'data'
+data/
+**/data/

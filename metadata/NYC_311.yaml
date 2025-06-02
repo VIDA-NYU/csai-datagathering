@@ -1,0 +1,45 @@
+"dataset_id": "jrb2-thup"
+"name": "NYC 311 Data"
+"description": "All 311 Service Requests from 2010 to present. This information is\
+  \ automatically updated daily.\r\n\r\nClick here to download data from 2011 - https://data.cityofnewyork.us/dataset/311-Service-Requests-From-2011/fpz8-jqf4\r\
+  \n\r\nClick here to download data from 2012 - https://data.cityofnewyork.us/dataset/311-Service-Requests-From-2012/as38-8eb5\r\
+  \n\r\nClick here to download data from 2013 - https://data.cityofnewyork.us/dataset/311-Service-Requests-From-2013/hybb-af8n\r\
+  \n\r\nClick here to download data from 2014 - https://data.cityofnewyork.us/dataset/311-Service-Requests-From-2014/vtzg-7562\r\
+  \n\r\nClick here to download data from 2015 - https://data.cityofnewyork.us/dataset/311-Service-Requests-From-2015/57g5-etyj"
+"source_organization": "311 Service"
+"domain": "social services"
+"last_updated": "2025-05-29"
+"update_frequency": "Daily"
+"access":
+  "primary_url": "https://data.cityofnewyork.us/d/jrb2-thup"
+  "api_endpoint": "https://data.cityofnewyork.us/resource/jrb2-thup.json"
+  "license": "Open Data License"
+  "file_format":
+  - "CSV"
+  - "JSON"
+  "rate_limits": "Unknown"
+"spatial":
+  "geometry_type": "point"
+  "coordinate_system": "EPSG:4326"
+  "coverage_area": "NYC"
+"temporal":
+  temporal_type: "event-based"
+  temporal_resolution: "daily"
+  time_column: "created_date"
+"implementation":
+  "downloader_module": "downloaders.jrb2-thup"
+  "processor_module": "processors.jrb2-thup"
+  "example_notebook": "examples/jrb2-thup_example.ipynb"
+"integration_opportunities":
+  "spatial_joins":
+    - "NYC neighborhood boundaries"
+    - "Census tracts"
+  "temporal_alignment":
+    - "Weather data"
+    - "Public events calendar"
+"map_algebra":
+  "raster_conversion":
+    suitable_for_rasterization: true
+    recommended_cell_size: "100 meters"
+    interpolation_method: "nearest neighbor"
+"data_name": "NYC_311"

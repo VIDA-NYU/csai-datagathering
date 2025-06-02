@@ -1,0 +1,2209 @@
+{
+    "size": 551371378,
+    "nb_rows": 892092,
+    "average_row_size": 618.0656008573106,
+    "nb_profiled_rows": 8090,
+    "nb_columns": 41,
+    "columns": [
+        {
+            "name": "Unique Key",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [],
+            "unclean_values_ratio": 0.0,
+            "num_distinct_values": 8090,
+            "mean": 64058388.864276886,
+            "stddev": 275782.0317411861,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 63598537.0,
+                        "lte": 63884726.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 63918415.0,
+                        "lte": 64198655.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 64230091.0,
+                        "lte": 64514128.0
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 821,
+                        "bin_start": 63585596.0,
+                        "bin_end": 63680156.4
+                    },
+                    {
+                        "count": 828,
+                        "bin_start": 63680156.4,
+                        "bin_end": 63774716.8
+                    },
+                    {
+                        "count": 817,
+                        "bin_start": 63774716.8,
+                        "bin_end": 63869277.2
+                    },
+                    {
+                        "count": 793,
+                        "bin_start": 63869277.2,
+                        "bin_end": 63963837.6
+                    },
+                    {
+                        "count": 785,
+                        "bin_start": 63963837.6,
+                        "bin_end": 64058398.0
+                    },
+                    {
+                        "count": 771,
+                        "bin_start": 64058398.0,
+                        "bin_end": 64152958.4
+                    },
+                    {
+                        "count": 821,
+                        "bin_start": 64152958.4,
+                        "bin_end": 64247518.8
+                    },
+                    {
+                        "count": 792,
+                        "bin_start": 64247518.8,
+                        "bin_end": 64342079.2
+                    },
+                    {
+                        "count": 829,
+                        "bin_start": 64342079.2,
+                        "bin_end": 64436639.6
+                    },
+                    {
+                        "count": 833,
+                        "bin_start": 64436639.6,
+                        "bin_end": 64531200.0
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Created Date",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/DateTime"
+            ],
+            "num_distinct_values": 8067,
+            "plot": {
+                "type": "histogram_temporal",
+                "data": [
+                    {
+                        "count": 1088,
+                        "date_start": "2025-01-01T01:57:20",
+                        "date_end": "2025-01-10T04:11:44"
+                    },
+                    {
+                        "count": 888,
+                        "date_start": "2025-01-10T04:11:44",
+                        "date_end": "2025-01-19T06:26:08"
+                    },
+                    {
+                        "count": 859,
+                        "date_start": "2025-01-19T06:26:08",
+                        "date_end": "2025-01-28T08:42:40"
+                    },
+                    {
+                        "count": 731,
+                        "date_start": "2025-01-28T08:42:40",
+                        "date_end": "2025-02-06T10:57:04"
+                    },
+                    {
+                        "count": 740,
+                        "date_start": "2025-02-06T10:57:04",
+                        "date_end": "2025-02-15T13:11:28"
+                    },
+                    {
+                        "count": 755,
+                        "date_start": "2025-02-15T13:11:28",
+                        "date_end": "2025-02-24T15:25:52"
+                    },
+                    {
+                        "count": 741,
+                        "date_start": "2025-02-24T15:25:52",
+                        "date_end": "2025-03-05T17:40:16"
+                    },
+                    {
+                        "count": 751,
+                        "date_start": "2025-03-05T17:40:16",
+                        "date_end": "2025-03-14T19:56:48"
+                    },
+                    {
+                        "count": 781,
+                        "date_start": "2025-03-14T19:56:48",
+                        "date_end": "2025-03-23T22:11:12"
+                    },
+                    {
+                        "count": 756,
+                        "date_start": "2025-03-23T22:11:12",
+                        "date_end": "2025-04-02T00:25:36"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Closed Date",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/DateTime"
+            ],
+            "missing_values_ratio": 0.0826946847960445,
+            "num_distinct_values": 7218,
+            "plot": {
+                "type": "histogram_temporal",
+                "data": [
+                    {
+                        "count": 833,
+                        "date_start": "2025-01-01T02:42:08",
+                        "date_end": "2025-01-10T04:52:16"
+                    },
+                    {
+                        "count": 840,
+                        "date_start": "2025-01-10T04:52:16",
+                        "date_end": "2025-01-19T07:00:16"
+                    },
+                    {
+                        "count": 790,
+                        "date_start": "2025-01-19T07:00:16",
+                        "date_end": "2025-01-28T09:10:24"
+                    },
+                    {
+                        "count": 673,
+                        "date_start": "2025-01-28T09:10:24",
+                        "date_end": "2025-02-06T11:20:32"
+                    },
+                    {
+                        "count": 666,
+                        "date_start": "2025-02-06T11:20:32",
+                        "date_end": "2025-02-15T13:30:40"
+                    },
+                    {
+                        "count": 665,
+                        "date_start": "2025-02-15T13:30:40",
+                        "date_end": "2025-02-24T15:38:40"
+                    },
+                    {
+                        "count": 725,
+                        "date_start": "2025-02-24T15:38:40",
+                        "date_end": "2025-03-05T17:48:48"
+                    },
+                    {
+                        "count": 751,
+                        "date_start": "2025-03-05T17:48:48",
+                        "date_end": "2025-03-14T19:58:56"
+                    },
+                    {
+                        "count": 710,
+                        "date_start": "2025-03-14T19:58:56",
+                        "date_end": "2025-03-23T22:06:56"
+                    },
+                    {
+                        "count": 768,
+                        "date_start": "2025-03-23T22:06:56",
+                        "date_end": "2025-04-02T00:17:04"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Agency",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "num_distinct_values": 13,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "DEP",
+                        "count": 375
+                    },
+                    {
+                        "bin": "DOT",
+                        "count": 506
+                    },
+                    {
+                        "bin": "DSNY",
+                        "count": 656
+                    },
+                    {
+                        "bin": "HPD",
+                        "count": 2265
+                    },
+                    {
+                        "bin": "NYPD",
+                        "count": 3522
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Agency Name",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Text"
+            ],
+            "plot": {
+                "type": "histogram_text",
+                "data": [
+                    {
+                        "bin": "department",
+                        "count": 7977
+                    },
+                    {
+                        "bin": "of",
+                        "count": 4455
+                    },
+                    {
+                        "bin": "new",
+                        "count": 3522
+                    },
+                    {
+                        "bin": "york",
+                        "count": 3522
+                    },
+                    {
+                        "bin": "city",
+                        "count": 3522
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Complaint Type",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "num_distinct_values": 125,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "Blocked Driveway",
+                        "count": 391
+                    },
+                    {
+                        "bin": "HEAT/HOT WATER",
+                        "count": 1233
+                    },
+                    {
+                        "bin": "Illegal Parking",
+                        "count": 1290
+                    },
+                    {
+                        "bin": "Noise - Residential",
+                        "count": 1123
+                    },
+                    {
+                        "bin": "UNSANITARY CONDITION",
+                        "count": 234
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Descriptor",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.007169344870210136,
+            "num_distinct_values": 397,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "APARTMENT ONLY",
+                        "count": 441
+                    },
+                    {
+                        "bin": "Banging/Pounding",
+                        "count": 314
+                    },
+                    {
+                        "bin": "Blocked Hydrant",
+                        "count": 430
+                    },
+                    {
+                        "bin": "ENTIRE BUILDING",
+                        "count": 792
+                    },
+                    {
+                        "bin": "Loud Music/Party",
+                        "count": 959
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Location Type",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.11409147095179234,
+            "num_distinct_values": 51,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "RESIDENTIAL BUILDING",
+                        "count": 2265
+                    },
+                    {
+                        "bin": "Residential Building/House",
+                        "count": 1184
+                    },
+                    {
+                        "bin": "Sidewalk",
+                        "count": 357
+                    },
+                    {
+                        "bin": "Street",
+                        "count": 555
+                    },
+                    {
+                        "bin": "Street/Sidewalk",
+                        "count": 2198
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Incident Zip",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.009641532756489494,
+            "num_distinct_values": 187,
+            "mean": 10796.268721917124,
+            "stddev": 522.6624567917677,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 10002.0,
+                        "lte": 10040.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 10306.0,
+                        "lte": 10472.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 11105.0,
+                        "lte": 11432.0
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 1469,
+                        "bin_start": 10001.0,
+                        "bin_end": 10170.3
+                    },
+                    {
+                        "count": 271,
+                        "bin_start": 10170.3,
+                        "bin_end": 10339.6
+                    },
+                    {
+                        "count": 2169,
+                        "bin_start": 10339.6,
+                        "bin_end": 10508.9
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 10508.9,
+                        "bin_end": 10678.2
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 10678.2,
+                        "bin_end": 10847.5
+                    },
+                    {
+                        "count": 5,
+                        "bin_start": 10847.5,
+                        "bin_end": 11016.8
+                    },
+                    {
+                        "count": 251,
+                        "bin_start": 11016.8,
+                        "bin_end": 11186.1
+                    },
+                    {
+                        "count": 2418,
+                        "bin_start": 11186.1,
+                        "bin_end": 11355.4
+                    },
+                    {
+                        "count": 1361,
+                        "bin_start": 11355.4,
+                        "bin_end": 11524.7
+                    },
+                    {
+                        "count": 68,
+                        "bin_start": 11524.7,
+                        "bin_end": 11694.0
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Incident Address",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [],
+            "missing_values_ratio": 0.03757725587144623,
+            "num_distinct_values": 6476
+        },
+        {
+            "name": "Street Name",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [],
+            "missing_values_ratio": 0.03757725587144623,
+            "num_distinct_values": 2328
+        },
+        {
+            "name": "Cross Street 1",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [],
+            "missing_values_ratio": 0.35067985166872684,
+            "num_distinct_values": 2067
+        },
+        {
+            "name": "Cross Street 2",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [],
+            "missing_values_ratio": 0.35018541409147097,
+            "num_distinct_values": 2082
+        },
+        {
+            "name": "Intersection Street 1",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [],
+            "missing_values_ratio": 0.3812113720642769,
+            "num_distinct_values": 1794
+        },
+        {
+            "name": "Intersection Street 2",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [],
+            "missing_values_ratio": 0.3803461063040791,
+            "num_distinct_values": 1846
+        },
+        {
+            "name": "Address Type",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.004820766378244747,
+            "num_distinct_values": 5,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "ADDRESS",
+                        "count": 7470
+                    },
+                    {
+                        "bin": "BLOCKFACE",
+                        "count": 66
+                    },
+                    {
+                        "bin": "INTERSECTION",
+                        "count": 486
+                    },
+                    {
+                        "bin": "PLACENAME",
+                        "count": 3
+                    },
+                    {
+                        "bin": "UNRECOGNIZED",
+                        "count": 26
+                    }
+                ]
+            }
+        },
+        {
+            "name": "City",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.03522867737948084,
+            "num_distinct_values": 46,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "BRONX",
+                        "count": 2132
+                    },
+                    {
+                        "bin": "BROOKLYN",
+                        "count": 2270
+                    },
+                    {
+                        "bin": "JAMAICA",
+                        "count": 169
+                    },
+                    {
+                        "bin": "NEW YORK",
+                        "count": 1370
+                    },
+                    {
+                        "bin": "STATEN ISLAND",
+                        "count": 254
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Landmark",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [],
+            "missing_values_ratio": 0.44215080346106306,
+            "num_distinct_values": 1730
+        },
+        {
+            "name": "Facility Type",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.9262051915945612,
+            "num_distinct_values": 2,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "DSNY Garage",
+                        "count": 25
+                    },
+                    {
+                        "bin": "N/A",
+                        "count": 572
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Status",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "num_distinct_values": 7,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "Assigned",
+                        "count": 36
+                    },
+                    {
+                        "bin": "Closed",
+                        "count": 7389
+                    },
+                    {
+                        "bin": "In Progress",
+                        "count": 269
+                    },
+                    {
+                        "bin": "Open",
+                        "count": 382
+                    },
+                    {
+                        "bin": "Pending",
+                        "count": 8
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Due Date",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/DateTime"
+            ],
+            "missing_values_ratio": 0.996044499381953,
+            "num_distinct_values": 30,
+            "plot": {
+                "type": "histogram_temporal",
+                "data": [
+                    {
+                        "count": 4,
+                        "date_start": "2025-01-28T05:32:48",
+                        "date_end": "2025-02-06T05:05:04"
+                    },
+                    {
+                        "count": 4,
+                        "date_start": "2025-02-06T05:05:04",
+                        "date_end": "2025-02-15T04:35:12"
+                    },
+                    {
+                        "count": 1,
+                        "date_start": "2025-02-15T04:35:12",
+                        "date_end": "2025-02-24T04:05:20"
+                    },
+                    {
+                        "count": 3,
+                        "date_start": "2025-02-24T04:05:20",
+                        "date_end": "2025-03-05T03:37:36"
+                    },
+                    {
+                        "count": 5,
+                        "date_start": "2025-03-05T03:37:36",
+                        "date_end": "2025-03-14T03:09:52"
+                    },
+                    {
+                        "count": 4,
+                        "date_start": "2025-03-14T03:09:52",
+                        "date_end": "2025-03-23T02:40:00"
+                    },
+                    {
+                        "count": 2,
+                        "date_start": "2025-03-23T02:40:00",
+                        "date_end": "2025-04-01T02:10:08"
+                    },
+                    {
+                        "count": 5,
+                        "date_start": "2025-04-01T02:10:08",
+                        "date_end": "2025-04-10T01:42:24"
+                    },
+                    {
+                        "count": 2,
+                        "date_start": "2025-04-10T01:42:24",
+                        "date_end": "2025-04-19T01:14:40"
+                    },
+                    {
+                        "count": 2,
+                        "date_start": "2025-04-19T01:14:40",
+                        "date_end": "2025-04-28T00:44:48"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Resolution Description",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Text"
+            ],
+            "missing_values_ratio": 0.028182941903584672,
+            "plot": {
+                "type": "histogram_text",
+                "data": [
+                    {
+                        "bin": "the",
+                        "count": 28779
+                    },
+                    {
+                        "bin": "to",
+                        "count": 11461
+                    },
+                    {
+                        "bin": "complaint",
+                        "count": 8760
+                    },
+                    {
+                        "bin": "of",
+                        "count": 6687
+                    },
+                    {
+                        "bin": "and",
+                        "count": 6151
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Resolution Action Updated Date",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/DateTime"
+            ],
+            "missing_values_ratio": 0.02533992583436341,
+            "num_distinct_values": 5400,
+            "plot": {
+                "type": "histogram_temporal",
+                "data": [
+                    {
+                        "count": 1,
+                        "date_start": "2023-10-03T07:15:12",
+                        "date_end": "2023-11-26T23:34:24"
+                    },
+                    {
+                        "count": 0,
+                        "date_start": "2023-11-26T23:34:24",
+                        "date_end": "2024-01-20T15:51:28"
+                    },
+                    {
+                        "count": 0,
+                        "date_start": "2024-01-20T15:51:28",
+                        "date_end": "2024-03-15T08:08:32"
+                    },
+                    {
+                        "count": 0,
+                        "date_start": "2024-03-15T08:08:32",
+                        "date_end": "2024-05-09T00:27:44"
+                    },
+                    {
+                        "count": 0,
+                        "date_start": "2024-05-09T00:27:44",
+                        "date_end": "2024-07-02T16:46:56"
+                    },
+                    {
+                        "count": 0,
+                        "date_start": "2024-07-02T16:46:56",
+                        "date_end": "2024-08-26T09:04:00"
+                    },
+                    {
+                        "count": 0,
+                        "date_start": "2024-08-26T09:04:00",
+                        "date_end": "2024-10-20T01:21:04"
+                    },
+                    {
+                        "count": 0,
+                        "date_start": "2024-10-20T01:21:04",
+                        "date_end": "2024-12-13T17:40:16"
+                    },
+                    {
+                        "count": 3239,
+                        "date_start": "2024-12-13T17:40:16",
+                        "date_end": "2025-02-06T09:59:28"
+                    },
+                    {
+                        "count": 4645,
+                        "date_start": "2025-02-06T09:59:28",
+                        "date_end": "2025-04-02T02:16:32"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Community Board",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "num_distinct_values": 72,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "04 BRONX",
+                        "count": 228
+                    },
+                    {
+                        "bin": "05 BROOKLYN",
+                        "count": 193
+                    },
+                    {
+                        "bin": "07 BRONX",
+                        "count": 200
+                    },
+                    {
+                        "bin": "12 BRONX",
+                        "count": 661
+                    },
+                    {
+                        "bin": "12 MANHATTAN",
+                        "count": 261
+                    }
+                ]
+            }
+        },
+        {
+            "name": "BBL",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.09604449938195303,
+            "num_distinct_values": 5925,
+            "mean": 2664208742.73048,
+            "stddev": 1113464770.062791,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 1002330017.0,
+                        "lte": 1021800078.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 2025260090.0,
+                        "lte": 3074150052.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 4003730002.0,
+                        "lte": 5033140030.0
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 1,
+                        "bin_start": 0.0,
+                        "bin_end": 527000050.1
+                    },
+                    {
+                        "count": 1341,
+                        "bin_start": 527000050.1,
+                        "bin_end": 1054000100.2
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 1054000100.2,
+                        "bin_end": 1581000150.3000002
+                    },
+                    {
+                        "count": 2062,
+                        "bin_start": 1581000150.3000002,
+                        "bin_end": 2108000200.4
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 2108000200.4,
+                        "bin_end": 2635000250.5
+                    },
+                    {
+                        "count": 2126,
+                        "bin_start": 2635000250.5,
+                        "bin_end": 3162000300.6000004
+                    },
+                    {
+                        "count": 2,
+                        "bin_start": 3162000300.6000004,
+                        "bin_end": 3689000350.7000003
+                    },
+                    {
+                        "count": 1555,
+                        "bin_start": 3689000350.7000003,
+                        "bin_end": 4216000400.8
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 4216000400.8,
+                        "bin_end": 4743000450.900001
+                    },
+                    {
+                        "count": 226,
+                        "bin_start": 4743000450.900001,
+                        "bin_end": 5270000501.0
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Borough",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "num_distinct_values": 6,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "BRONX",
+                        "count": 2175
+                    },
+                    {
+                        "bin": "BROOKLYN",
+                        "count": 2350
+                    },
+                    {
+                        "bin": "MANHATTAN",
+                        "count": 1503
+                    },
+                    {
+                        "bin": "QUEENS",
+                        "count": 1786
+                    },
+                    {
+                        "bin": "STATEN ISLAND",
+                        "count": 268
+                    }
+                ]
+            }
+        },
+        {
+            "name": "X Coordinate (State Plane)",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.012855377008652658,
+            "num_distinct_values": 6338,
+            "mean": 1006749.3908089156,
+            "stddev": 20351.377074134125,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 982474.0,
+                        "lte": 1010820.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 1013488.0,
+                        "lte": 1051860.0
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 39,
+                        "bin_start": 915400.0,
+                        "bin_end": 930554.3
+                    },
+                    {
+                        "count": 88,
+                        "bin_start": 930554.3,
+                        "bin_end": 945708.6
+                    },
+                    {
+                        "count": 90,
+                        "bin_start": 945708.6,
+                        "bin_end": 960862.9
+                    },
+                    {
+                        "count": 76,
+                        "bin_start": 960862.9,
+                        "bin_end": 976017.2
+                    },
+                    {
+                        "count": 1237,
+                        "bin_start": 976017.2,
+                        "bin_end": 991171.5
+                    },
+                    {
+                        "count": 2447,
+                        "bin_start": 991171.5,
+                        "bin_end": 1006325.8
+                    },
+                    {
+                        "count": 2052,
+                        "bin_start": 1006325.8,
+                        "bin_end": 1021480.1
+                    },
+                    {
+                        "count": 1410,
+                        "bin_start": 1021480.1,
+                        "bin_end": 1036634.4
+                    },
+                    {
+                        "count": 397,
+                        "bin_start": 1036634.4,
+                        "bin_end": 1051788.7
+                    },
+                    {
+                        "count": 150,
+                        "bin_start": 1051788.7,
+                        "bin_end": 1066943.0
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Y Coordinate (State Plane)",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.012855377008652658,
+            "num_distinct_values": 6480,
+            "mean": 211381.38842975206,
+            "stddev": 33648.084591453044,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 149093.0,
+                        "lte": 186947.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 189594.0,
+                        "lte": 222540.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 231325.0,
+                        "lte": 264242.0
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 38,
+                        "bin_start": 122162.0,
+                        "bin_end": 137015.7
+                    },
+                    {
+                        "count": 135,
+                        "bin_start": 137015.7,
+                        "bin_end": 151869.4
+                    },
+                    {
+                        "count": 649,
+                        "bin_start": 151869.4,
+                        "bin_end": 166723.1
+                    },
+                    {
+                        "count": 870,
+                        "bin_start": 166723.1,
+                        "bin_end": 181576.8
+                    },
+                    {
+                        "count": 1299,
+                        "bin_start": 181576.8,
+                        "bin_end": 196430.5
+                    },
+                    {
+                        "count": 1190,
+                        "bin_start": 196430.5,
+                        "bin_end": 211284.2
+                    },
+                    {
+                        "count": 907,
+                        "bin_start": 211284.2,
+                        "bin_end": 226137.90000000002
+                    },
+                    {
+                        "count": 728,
+                        "bin_start": 226137.90000000002,
+                        "bin_end": 240991.6
+                    },
+                    {
+                        "count": 1248,
+                        "bin_start": 240991.6,
+                        "bin_end": 255845.30000000002
+                    },
+                    {
+                        "count": 922,
+                        "bin_start": 255845.30000000002,
+                        "bin_end": 270699.0
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Open Data Channel Type",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "num_distinct_values": 4,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "MOBILE",
+                        "count": 2009
+                    },
+                    {
+                        "bin": "ONLINE",
+                        "count": 3371
+                    },
+                    {
+                        "bin": "PHONE",
+                        "count": 2111
+                    },
+                    {
+                        "bin": "UNKNOWN",
+                        "count": 599
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Park Facility Name",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "num_distinct_values": 27,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "Brooklyn Bridge Park",
+                        "count": 1
+                    },
+                    {
+                        "bin": "Marcus Garvey Park",
+                        "count": 4
+                    },
+                    {
+                        "bin": "N/A",
+                        "count": 5
+                    },
+                    {
+                        "bin": "Prospect Park",
+                        "count": 1
+                    },
+                    {
+                        "bin": "Unspecified",
+                        "count": 8057
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Park Borough",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "num_distinct_values": 6,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "BRONX",
+                        "count": 2175
+                    },
+                    {
+                        "bin": "BROOKLYN",
+                        "count": 2350
+                    },
+                    {
+                        "bin": "MANHATTAN",
+                        "count": 1503
+                    },
+                    {
+                        "bin": "QUEENS",
+                        "count": 1786
+                    },
+                    {
+                        "bin": "STATEN ISLAND",
+                        "count": 268
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Vehicle Type",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.9610630407911002,
+            "num_distinct_values": 6,
+            "plot": {
+                "type": "histogram_categorical",
+                "data": [
+                    {
+                        "bin": "Car",
+                        "count": 209
+                    },
+                    {
+                        "bin": "Other",
+                        "count": 22
+                    },
+                    {
+                        "bin": "SUV",
+                        "count": 44
+                    },
+                    {
+                        "bin": "Truck",
+                        "count": 22
+                    },
+                    {
+                        "bin": "Van",
+                        "count": 17
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Taxi Company Borough",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [],
+            "missing_values_ratio": 0.9996291718170581,
+            "num_distinct_values": 1
+        },
+        {
+            "name": "Taxi Pick Up Location",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Text"
+            ],
+            "missing_values_ratio": 0.992583436341162,
+            "plot": {
+                "type": "histogram_text",
+                "data": [
+                    {
+                        "bin": "ny",
+                        "count": 60
+                    },
+                    {
+                        "bin": "manhattan",
+                        "count": 40
+                    },
+                    {
+                        "bin": "new",
+                        "count": 30
+                    },
+                    {
+                        "bin": "york",
+                        "count": 30
+                    },
+                    {
+                        "bin": "street",
+                        "count": 28
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Bridge Highway Name",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [],
+            "missing_values_ratio": 0.9938195302843016,
+            "num_distinct_values": 26
+        },
+        {
+            "name": "Bridge Highway Direction",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [],
+            "missing_values_ratio": 0.996168108776267,
+            "num_distinct_values": 26
+        },
+        {
+            "name": "Road Ramp",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [],
+            "missing_values_ratio": 0.9971569839307788,
+            "num_distinct_values": 5
+        },
+        {
+            "name": "Bridge Highway Segment",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [],
+            "missing_values_ratio": 0.9938195302843016,
+            "num_distinct_values": 25
+        },
+        {
+            "name": "Latitude",
+            "structural_type": "http://schema.org/Float",
+            "semantic_types": [
+                "http://schema.org/latitude"
+            ],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.012855377008652658,
+            "mean": 40.74681700683794,
+            "stddev": 0.09235209760823314,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 40.57586736940487,
+                        "lte": 40.67866957060019
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 40.686240371330314,
+                        "lte": 40.776727262576145
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 40.80126232510432,
+                        "lte": 40.89187241649303
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 37,
+                        "bin_start": 40.50173519612772,
+                        "bin_end": 40.54252501093121
+                    },
+                    {
+                        "count": 134,
+                        "bin_start": 40.54252501093121,
+                        "bin_end": 40.58331482573469
+                    },
+                    {
+                        "count": 645,
+                        "bin_start": 40.58331482573469,
+                        "bin_end": 40.62410464053818
+                    },
+                    {
+                        "count": 870,
+                        "bin_start": 40.62410464053818,
+                        "bin_end": 40.66489445534166
+                    },
+                    {
+                        "count": 1303,
+                        "bin_start": 40.66489445534166,
+                        "bin_end": 40.70568427014515
+                    },
+                    {
+                        "count": 1187,
+                        "bin_start": 40.70568427014515,
+                        "bin_end": 40.74647408494864
+                    },
+                    {
+                        "count": 911,
+                        "bin_start": 40.74647408494864,
+                        "bin_end": 40.78726389975212
+                    },
+                    {
+                        "count": 728,
+                        "bin_start": 40.78726389975212,
+                        "bin_end": 40.82805371455561
+                    },
+                    {
+                        "count": 1249,
+                        "bin_start": 40.82805371455561,
+                        "bin_end": 40.86884352935909
+                    },
+                    {
+                        "count": 922,
+                        "bin_start": 40.86884352935909,
+                        "bin_end": 40.90963334416258
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Longitude",
+            "structural_type": "http://schema.org/Float",
+            "semantic_types": [
+                "http://schema.org/longitude"
+            ],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.012855377008652658,
+            "mean": -73.91875965402923,
+            "stddev": 0.07341812657578213,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": -74.16294577646796,
+                        "lte": -73.97506074579181
+                    }
+                },
+                {
+                    "range": {
+                        "gte": -73.96554074886703,
+                        "lte": -73.88927651471745
+                    }
+                },
+                {
+                    "range": {
+                        "gte": -73.87844072706842,
+                        "lte": -73.75119867517188
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 39,
+                        "bin_start": -74.24757133186479,
+                        "bin_end": -74.19297413013419
+                    },
+                    {
+                        "count": 92,
+                        "bin_start": -74.19297413013419,
+                        "bin_end": -74.13837692840359
+                    },
+                    {
+                        "count": 86,
+                        "bin_start": -74.13837692840359,
+                        "bin_end": -74.08377972667299
+                    },
+                    {
+                        "count": 78,
+                        "bin_start": -74.08377972667299,
+                        "bin_end": -74.02918252494239
+                    },
+                    {
+                        "count": 1246,
+                        "bin_start": -74.02918252494239,
+                        "bin_end": -73.97458532321178
+                    },
+                    {
+                        "count": 2448,
+                        "bin_start": -73.97458532321178,
+                        "bin_end": -73.91998812148118
+                    },
+                    {
+                        "count": 2044,
+                        "bin_start": -73.91998812148118,
+                        "bin_end": -73.86539091975058
+                    },
+                    {
+                        "count": 1408,
+                        "bin_start": -73.86539091975058,
+                        "bin_end": -73.81079371801998
+                    },
+                    {
+                        "count": 397,
+                        "bin_start": -73.81079371801998,
+                        "bin_end": -73.75619651628938
+                    },
+                    {
+                        "count": 148,
+                        "bin_start": -73.75619651628938,
+                        "bin_end": -73.70159931455878
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Location",
+            "structural_type": "http://schema.org/GeoCoordinates",
+            "semantic_types": [],
+            "point_format": "lat,long",
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.012855377008652658
+        }
+    ],
+    "nb_spatial_columns": 3,
+    "nb_temporal_columns": 4,
+    "nb_categorical_columns": 14,
+    "nb_numerical_columns": 5,
+    "types": [
+        "categorical",
+        "numerical",
+        "spatial",
+        "temporal"
+    ],
+    "spatial_coverage": [
+        {
+            "type": "latlong",
+            "column_names": [
+                "Latitude",
+                "Longitude"
+            ],
+            "column_indexes": [
+                38,
+                39
+            ],
+            "geohashes4": [
+                {
+                    "hash": "121130231323",
+                    "number": 400
+                },
+                {
+                    "hash": "121130231321",
+                    "number": 724
+                },
+                {
+                    "hash": "121130231320",
+                    "number": 495
+                },
+                {
+                    "hash": "121130231322",
+                    "number": 49
+                },
+                {
+                    "hash": "121130231302",
+                    "number": 210
+                },
+                {
+                    "hash": "121130231300",
+                    "number": 69
+                },
+                {
+                    "hash": "121130231303",
+                    "number": 10
+                },
+                {
+                    "hash": "121130231330",
+                    "number": 549
+                },
+                {
+                    "hash": "121130231331",
+                    "number": 651
+                },
+                {
+                    "hash": "121130231332",
+                    "number": 339
+                },
+                {
+                    "hash": "121130231333",
+                    "number": 318
+                },
+                {
+                    "hash": "121130231312",
+                    "number": 85
+                },
+                {
+                    "hash": "121130231313",
+                    "number": 7
+                },
+                {
+                    "hash": "121130231231",
+                    "number": 255
+                },
+                {
+                    "hash": "121130231233",
+                    "number": 9
+                },
+                {
+                    "hash": "121130231213",
+                    "number": 26
+                },
+                {
+                    "hash": "121130231211",
+                    "number": 49
+                },
+                {
+                    "hash": "121130231210",
+                    "number": 30
+                },
+                {
+                    "hash": "121130231032",
+                    "number": 43
+                },
+                {
+                    "hash": "121130231033",
+                    "number": 5
+                },
+                {
+                    "hash": "121130231023",
+                    "number": 5
+                },
+                {
+                    "hash": "121130233011",
+                    "number": 49
+                },
+                {
+                    "hash": "121130233013",
+                    "number": 2
+                },
+                {
+                    "hash": "121130233101",
+                    "number": 152
+                },
+                {
+                    "hash": "121130233103",
+                    "number": 19
+                },
+                {
+                    "hash": "121130233100",
+                    "number": 11
+                },
+                {
+                    "hash": "121130233102",
+                    "number": 1
+                },
+                {
+                    "hash": "121130233111",
+                    "number": 134
+                },
+                {
+                    "hash": "121130233110",
+                    "number": 292
+                },
+                {
+                    "hash": "121130233113",
+                    "number": 24
+                },
+                {
+                    "hash": "121130233112",
+                    "number": 27
+                },
+                {
+                    "hash": "121130320232",
+                    "number": 903
+                },
+                {
+                    "hash": "121130320230",
+                    "number": 9
+                },
+                {
+                    "hash": "121130320223",
+                    "number": 836
+                },
+                {
+                    "hash": "121130320220",
+                    "number": 493
+                },
+                {
+                    "hash": "121130320221",
+                    "number": 481
+                },
+                {
+                    "hash": "121130320222",
+                    "number": 162
+                },
+                {
+                    "hash": "121130322001",
+                    "number": 28
+                },
+                {
+                    "hash": "121130322000",
+                    "number": 30
+                },
+                {
+                    "hash": "121130322010",
+                    "number": 5
+                }
+            ],
+            "ranges": [
+                {
+                    "range": {
+                        "type": "envelope",
+                        "coordinates": [
+                            [
+                                -74.12508395837695,
+                                40.75269253876219
+                            ],
+                            [
+                                -73.9198695528043,
+                                40.58130412579678
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "range": {
+                        "type": "envelope",
+                        "coordinates": [
+                            [
+                                -73.96024756991072,
+                                40.89187241649303
+                            ],
+                            [
+                                -73.85023095513715,
+                                40.771281774381386
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "range": {
+                        "type": "envelope",
+                        "coordinates": [
+                            [
+                                -73.91130979472481,
+                                40.7637486473748
+                            ],
+                            [
+                                -73.74520908324834,
+                                40.64902848062187
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "number": 7986
+        },
+        {
+            "type": "point_latlong",
+            "column_names": [
+                "Location"
+            ],
+            "column_indexes": [
+                40
+            ],
+            "geohashes4": [
+                {
+                    "hash": "121130231323",
+                    "number": 400
+                },
+                {
+                    "hash": "121130231321",
+                    "number": 724
+                },
+                {
+                    "hash": "121130231320",
+                    "number": 495
+                },
+                {
+                    "hash": "121130231322",
+                    "number": 49
+                },
+                {
+                    "hash": "121130231302",
+                    "number": 210
+                },
+                {
+                    "hash": "121130231300",
+                    "number": 69
+                },
+                {
+                    "hash": "121130231303",
+                    "number": 10
+                },
+                {
+                    "hash": "121130231330",
+                    "number": 549
+                },
+                {
+                    "hash": "121130231331",
+                    "number": 651
+                },
+                {
+                    "hash": "121130231332",
+                    "number": 339
+                },
+                {
+                    "hash": "121130231333",
+                    "number": 318
+                },
+                {
+                    "hash": "121130231312",
+                    "number": 85
+                },
+                {
+                    "hash": "121130231313",
+                    "number": 7
+                },
+                {
+                    "hash": "121130231231",
+                    "number": 255
+                },
+                {
+                    "hash": "121130231233",
+                    "number": 9
+                },
+                {
+                    "hash": "121130231213",
+                    "number": 26
+                },
+                {
+                    "hash": "121130231211",
+                    "number": 49
+                },
+                {
+                    "hash": "121130231210",
+                    "number": 30
+                },
+                {
+                    "hash": "121130231032",
+                    "number": 43
+                },
+                {
+                    "hash": "121130231033",
+                    "number": 5
+                },
+                {
+                    "hash": "121130231023",
+                    "number": 5
+                },
+                {
+                    "hash": "121130233011",
+                    "number": 49
+                },
+                {
+                    "hash": "121130233013",
+                    "number": 2
+                },
+                {
+                    "hash": "121130233101",
+                    "number": 152
+                },
+                {
+                    "hash": "121130233103",
+                    "number": 19
+                },
+                {
+                    "hash": "121130233100",
+                    "number": 11
+                },
+                {
+                    "hash": "121130233102",
+                    "number": 1
+                },
+                {
+                    "hash": "121130233111",
+                    "number": 134
+                },
+                {
+                    "hash": "121130233110",
+                    "number": 292
+                },
+                {
+                    "hash": "121130233113",
+                    "number": 24
+                },
+                {
+                    "hash": "121130233112",
+                    "number": 27
+                },
+                {
+                    "hash": "121130320232",
+                    "number": 903
+                },
+                {
+                    "hash": "121130320230",
+                    "number": 9
+                },
+                {
+                    "hash": "121130320223",
+                    "number": 836
+                },
+                {
+                    "hash": "121130320220",
+                    "number": 493
+                },
+                {
+                    "hash": "121130320221",
+                    "number": 481
+                },
+                {
+                    "hash": "121130320222",
+                    "number": 162
+                },
+                {
+                    "hash": "121130322001",
+                    "number": 28
+                },
+                {
+                    "hash": "121130322000",
+                    "number": 30
+                },
+                {
+                    "hash": "121130322010",
+                    "number": 5
+                }
+            ],
+            "ranges": [
+                {
+                    "range": {
+                        "type": "envelope",
+                        "coordinates": [
+                            [
+                                -74.12508395837695,
+                                40.75269253876219
+                            ],
+                            [
+                                -73.9198695528043,
+                                40.58130412579678
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "range": {
+                        "type": "envelope",
+                        "coordinates": [
+                            [
+                                -73.96024756991072,
+                                40.89187241649303
+                            ],
+                            [
+                                -73.85023095513715,
+                                40.771281774381386
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "range": {
+                        "type": "envelope",
+                        "coordinates": [
+                            [
+                                -73.91130979472481,
+                                40.763748647374804
+                            ],
+                            [
+                                -73.74520908324834,
+                                40.64902848062187
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "number": 7986
+        }
+    ],
+    "temporal_coverage": [
+        {
+            "type": "datetime",
+            "column_names": [
+                "Created Date"
+            ],
+            "column_indexes": [
+                1
+            ],
+            "column_types": [
+                "http://schema.org/DateTime"
+            ],
+            "ranges": [
+                {
+                    "range": {
+                        "gte": 1735810432.0,
+                        "lte": 1738045568.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 1738337664.0,
+                        "lte": 1740758784.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 1741029376.0,
+                        "lte": 1743414016.0
+                    }
+                }
+            ],
+            "temporal_resolution": "minute"
+        },
+        {
+            "type": "datetime",
+            "column_names": [
+                "Closed Date"
+            ],
+            "column_indexes": [
+                2
+            ],
+            "column_types": [
+                "http://schema.org/DateTime"
+            ],
+            "ranges": [
+                {
+                    "range": {
+                        "gte": 1735837952.0,
+                        "lte": 1738185984.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 1738508160.0,
+                        "lte": 1740851968.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 1741114496.0,
+                        "lte": 1743427712.0
+                    }
+                }
+            ],
+            "temporal_resolution": "second"
+        },
+        {
+            "type": "datetime",
+            "column_names": [
+                "Due Date"
+            ],
+            "column_indexes": [
+                20
+            ],
+            "column_types": [
+                "http://schema.org/DateTime"
+            ],
+            "ranges": [
+                {
+                    "range": {
+                        "gte": 1738042368.0,
+                        "lte": 1739945088.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 1740659712.0,
+                        "lte": 1742499840.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 1743281536.0,
+                        "lte": 1745801088.0
+                    }
+                }
+            ],
+            "temporal_resolution": "hour"
+        },
+        {
+            "type": "datetime",
+            "column_names": [
+                "Resolution Action Updated Date"
+            ],
+            "column_indexes": [
+                22
+            ],
+            "column_types": [
+                "http://schema.org/DateTime"
+            ],
+            "ranges": [
+                {
+                    "range": {
+                        "gte": 1735838080.0,
+                        "lte": 1738108800.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 1738421632.0,
+                        "lte": 1740787200.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 1741052416.0,
+                        "lte": 1743423616.0
+                    }
+                }
+            ],
+            "temporal_resolution": "second"
+        }
+    ],
+    "attribute_keywords": [
+        "Unique Key",
+        "Unique",
+        "Key",
+        "Created Date",
+        "Created",
+        "Date",
+        "Closed Date",
+        "Closed",
+        "Date",
+        "Agency",
+        "Agency Name",
+        "Agency",
+        "Name",
+        "Complaint Type",
+        "Complaint",
+        "Type",
+        "Descriptor",
+        "Location Type",
+        "Location",
+        "Type",
+        "Incident Zip",
+        "Incident",
+        "Zip",
+        "Incident Address",
+        "Incident",
+        "Address",
+        "Street Name",
+        "Street",
+        "Name",
+        "Cross Street 1",
+        "Cross",
+        "Street",
+        "1",
+        "Cross Street 2",
+        "Cross",
+        "Street",
+        "2",
+        "Intersection Street 1",
+        "Intersection",
+        "Street",
+        "1",
+        "Intersection Street 2",
+        "Intersection",
+        "Street",
+        "2",
+        "Address Type",
+        "Address",
+        "Type",
+        "City",
+        "Landmark",
+        "Facility Type",
+        "Facility",
+        "Type",
+        "Status",
+        "Due Date",
+        "Due",
+        "Date",
+        "Resolution Description",
+        "Resolution",
+        "Description",
+        "Resolution Action Updated Date",
+        "Resolution",
+        "Action",
+        "Updated",
+        "Date",
+        "Community Board",
+        "Community",
+        "Board",
+        "BBL",
+        "Borough",
+        "X Coordinate (State Plane)",
+        "X",
+        "Coordinate",
+        "State",
+        "Plane",
+        "",
+        "Y Coordinate (State Plane)",
+        "Y",
+        "Coordinate",
+        "State",
+        "Plane",
+        "",
+        "Open Data Channel Type",
+        "Open",
+        "Data",
+        "Channel",
+        "Type",
+        "Park Facility Name",
+        "Park",
+        "Facility",
+        "Name",
+        "Park Borough",
+        "Park",
+        "Borough",
+        "Vehicle Type",
+        "Vehicle",
+        "Type",
+        "Taxi Company Borough",
+        "Taxi",
+        "Company",
+        "Borough",
+        "Taxi Pick Up Location",
+        "Taxi",
+        "Pick",
+        "Up",
+        "Location",
+        "Bridge Highway Name",
+        "Bridge",
+        "Highway",
+        "Name",
+        "Bridge Highway Direction",
+        "Bridge",
+        "Highway",
+        "Direction",
+        "Road Ramp",
+        "Road",
+        "Ramp",
+        "Bridge Highway Segment",
+        "Bridge",
+        "Highway",
+        "Segment",
+        "Latitude",
+        "Longitude",
+        "Location"
+    ],
+    "sample": "Unique Key,Created Date,Closed Date,Agency,Agency Name,Complaint Type,Descriptor,Location Type,Incident Zip,Incident Address,Street Name,Cross Street 1,Cross Street 2,Intersection Street 1,Intersection Street 2,Address Type,City,Landmark,Facility Type,Status,Due Date,Resolution Description,Resolution Action Updated Date,Community Board,BBL,Borough,X Coordinate (State Plane),Y Coordinate (State Plane),Open Data Channel Type,Park Facility Name,Park Borough,Vehicle Type,Taxi Company Borough,Taxi Pick Up Location,Bridge Highway Name,Bridge Highway Direction,Road Ramp,Bridge Highway Segment,Latitude,Longitude,Location\r\n64469890,03/26/2025 04:47:00 AM,03/26/2025 08:40:00 AM,DOT,Department of Transportation,Traffic Signal Condition,Controller,,11223,,,,,AVENUE W,EAST 7 STREET,INTERSECTION,BROOKLYN,,N/A,Closed,,\"Service Request status for this request is available on the Department of Transportation's website. Please click the \"\"Learn More\"\" link...\",03/26/2025 08:40:00 AM,15 BROOKLYN,,BROOKLYN,994456,155499,UNKNOWN,Unspecified,BROOKLYN,,,,,,,,40.59347916435987,-73.96325126598535,\"(40.59347916435987, -73.96325126598535)\"\r\n64432609,03/22/2025 12:21:17 PM,03/22/2025 02:20:55 PM,NYPD,New York City Police Department,Illegal Parking,Double Parked Blocking Traffic,Street/Sidewalk,11374,61-25 97 STREET,97 STREET,HORACE HARDING EXPRESSWAY,62 DRIVE,HORACE HARDING EXPRESSWAY,62 DRIVE,ADDRESS,REGO PARK,97 STREET,,Closed,,The Police Department responded and upon arrival those responsible for the condition were gone.,03/22/2025 02:20:58 PM,06 QUEENS,4020820107,QUEENS,1022377,206714,MOBILE,Unspecified,QUEENS,Car,,,,,,,40.73397666119761,-73.86242663432829,\"(40.73397666119761, -73.86242663432829)\"\r\n64379841,03/16/2025 03:09:05 PM,03/17/2025 11:20:00 AM,DOT,Department of Transportation,Street Condition,Pothole,,11435,,,,,150 STREET,HOOVER AVENUE,INTERSECTION,QUEENS,,N/A,Closed,,The Department of Transportation inspected this complaint and repaired the problem.,03/17/2025 11:20:00 AM,08 QUEENS,,QUEENS,1036868,199566,UNKNOWN,Unspecified,QUEENS,,,,,,,,40.71428284295382,-73.81019489582782,\"(40.71428284295382, -73.81019489582782)\"\r\n64334668,03/12/2025 10:08:40 AM,03/12/2025 10:39:12 AM,DOHMH,Department of Health and Mental Hygiene,Indoor Air Quality,Ventilation,3+ Family Apartment Building,10467,3315 CRUGER AVENUE,CRUGER AVENUE,NORTH OAK DRIVE,BARTHOLDI STREET,NORTH OAK DRIVE,BARTHOLDI STREET,ADDRESS,BRONX,CRUGER AVENUE,,Closed,,A letter was sent to the owner or manager of the property you reported instructing them to correct the condition. If the condition...,03/12/2025 10:39:12 AM,12 BRONX,2046000019,BRONX,1021266,257600,PHONE,Unspecified,BRONX,,,,,,,,40.87364927387362,-73.86615488989199,\"(40.87364927387362, -73.86615488989199)\"\r\n64231818,03/03/2025 01:50:29 AM,03/03/2025 02:11:32 AM,NYPD,New York City Police Department,Noise - Residential,Banging/Pounding,Residential Building/House,11214,1869 83 STREET,83 STREET,18 AVENUE,19 AVENUE,18 AVENUE,19 AVENUE,ADDRESS,BROOKLYN,83 STREET,,Closed,,The Police Department responded to the complaint and with the information available observed no evidence of the violation at that time.,03/03/2025 02:11:39 AM,11 BROOKLYN,3063150039,BROOKLYN,984421,160824,PHONE,Unspecified,BROOKLYN,,,,,,,,40.60810108364675,-73.99938414563323,\"(40.60810108364675, -73.99938414563323)\"\r\n64233278,03/02/2025 01:08:59 AM,03/03/2025 11:00:51 AM,HPD,Department of Housing Preservation and Development,HEAT/HOT WATER,ENTIRE BUILDING,RESIDENTIAL BUILDING,10463,232 WEST  238 STREET,WEST  238 STREET,,,,,ADDRESS,BRONX,,,Closed,,The Department of Housing Preservation and Development contacted a tenant in the building and verified that the following conditions...,03/03/2025 12:00:00 AM,08 BRONX,2032700046,BRONX,1011873,261696,PHONE,Unspecified,BRONX,,,,,,,,40.88492591008708,-73.90010184875116,\"(40.88492591008708, -73.90010184875116)\"\r\n64198442,02/26/2025 09:24:24 AM,02/27/2025 07:52:58 PM,HPD,Department of Housing Preservation and Development,FLOORING/STAIRS,FLOOR,RESIDENTIAL BUILDING,10456,1125 FINDLAY AVENUE,FINDLAY AVENUE,,,,,ADDRESS,BRONX,,,Closed,,\"HPD attempted to conduct an inspection in response to this complaint, but was unable to complete the inspection. Please submit a new...\",02/27/2025 12:00:00 AM,04 BRONX,2024340032,BRONX,1008178,241962,PHONE,Unspecified,BRONX,,,,,,,,40.830772814008505,-73.91353519467509,\"(40.830772814008505, -73.91353519467509)\"\r\n64171150,02/23/2025 08:37:00 PM,02/24/2025 09:00:23 AM,NYPD,New York City Police Department,Noise - Residential,Loud Music/Party,Residential Building/House,10466,655 EAST  230 STREET,EAST  230 STREET,CARPENTER AVENUE,LOWERRE PLACE,CARPENTER AVENUE,LOWERRE PLACE,ADDRESS,BRONX,EAST  230 STREET,,Closed,,The Police Department responded to the complaint and determined that police action was not necessary.,02/24/2025 09:01:02 AM,12 BRONX,2048330028,BRONX,1022911,264242,MOBILE,Unspecified,BRONX,,,,,,,,40.89187241649303,-73.86016845296459,\"(40.89187241649303, -73.86016845296459)\"\r\n64147400,02/21/2025 02:28:57 PM,,HPD,Department of Housing Preservation and Development,DOOR/WINDOW,DOOR,RESIDENTIAL BUILDING,11214,2126 BENSON AVENUE,BENSON AVENUE,,,,,ADDRESS,BROOKLYN,,,Open,,The following complaint conditions are still open. HPD has already attempted to notify the property owner that the condition exists; the...,02/21/2025 12:00:00 AM,11 BROOKLYN,3064130030,BROOKLYN,985089,158258,PHONE,Unspecified,BROOKLYN,,,,,,,,40.60105789870135,-73.99697867071482,\"(40.60105789870135, -73.99697867071482)\"\r\n64136194,02/20/2025 01:29:00 PM,03/06/2025 04:00:00 AM,DEP,Department of Environmental Protection,Water System,Hydrant Running (WC3),,11422,257-11 145 AVENUE,145 AVENUE,MEMPHIS AVE,FRANCIS LEWIS BLVD,,,ADDRESS,ROSEDALE,,,Closed,,The Department of Environmental Protection investigated this complaint and shut the running hydrant.,03/06/2025 04:00:00 AM,13 QUEENS,4135890085,QUEENS,1058810,179183,ONLINE,Unspecified,QUEENS,,,,,,,,40.65817873394686,-73.73127109189923,\"(40.65817873394686, -73.73127109189923)\"\r\n64114698,02/18/2025 04:25:30 PM,02/18/2025 10:13:23 PM,NYPD,New York City Police Department,Noise - Residential,Banging/Pounding,Residential Building/House,11213,938 EASTERN PARKWAY,EASTERN PARKWAY,ALBANY AVENUE,TROY AVENUE,ALBANY AVENUE,TROY AVENUE,ADDRESS,BROOKLYN,EASTERN PARKWAY,,Closed,,The Police Department responded to the complaint but officers were unable to gain entry into the premises.,02/18/2025 10:13:26 PM,09 BROOKLYN,3013940033,BROOKLYN,1001598,183067,PHONE,Unspecified,BROOKLYN,,,,,,,,40.6691363689534,-73.93746421589879,\"(40.6691363689534, -73.93746421589879)\"\r\n63843493,01/22/2025 04:56:28 AM,01/22/2025 10:21:21 AM,HPD,Department of Housing Preservation and Development,HEAT/HOT WATER,ENTIRE BUILDING,RESIDENTIAL BUILDING,10468,2492 DEVOE TERRACE,DEVOE TERRACE,,,,,ADDRESS,BRONX,,,Closed,,The Department of Housing Preservation and Development contacted a tenant in the building and verified that the following conditions...,01/22/2025 12:00:00 AM,07 BRONX,2032190175,BRONX,1010550,254382,MOBILE,Unspecified,BRONX,,,,,,,,40.864855286806744,-73.90491516580856,\"(40.864855286806744, -73.90491516580856)\"\r\n63831409,01/21/2025 09:49:12 AM,01/23/2025 03:41:44 PM,HPD,Department of Housing Preservation and Development,HEAT/HOT WATER,ENTIRE BUILDING,RESIDENTIAL BUILDING,11212,381 ROCKAWAY AVENUE,ROCKAWAY AVENUE,,,,,ADDRESS,BROOKLYN,,,Closed,,HPD conducted an inspection of this complaint. The conditions observed by the inspector did not violate the housing laws enforced by...,01/23/2025 12:00:00 AM,16 BROOKLYN,3034890169,BROOKLYN,1008950,183602,ONLINE,Unspecified,BROOKLYN,,,,,,,,40.670587364768444,-73.91095990284381,\"(40.670587364768444, -73.91095990284381)\"\r\n63814969,01/19/2025 01:51:32 PM,01/27/2025 05:32:47 PM,HPD,Department of Housing Preservation and Development,DOOR/WINDOW,WINDOW FRAME,RESIDENTIAL BUILDING,11434,136-11 FARMERS BOULEVARD,FARMERS BOULEVARD,,,,,ADDRESS,JAMAICA,,,Closed,,The Department of Housing Preservation and Development was unable to access the rooms where the following  conditions were reported. No...,01/27/2025 12:00:00 AM,12 QUEENS,4130220064,QUEENS,1049800,185108,PHONE,Unspecified,QUEENS,,,,,,,,40.674512766103604,-73.76368712675641,\"(40.674512766103604, -73.76368712675641)\"\r\n63781966,01/16/2025 10:41:16 PM,01/16/2025 11:23:48 PM,NYPD,New York City Police Department,Illegal Parking,Commercial Overnight Parking,Street/Sidewalk,11217,232 HOYT STREET,HOYT STREET,BUTLER STREET,DOUGLASS STREET,BUTLER STREET,DOUGLASS STREET,ADDRESS,BROOKLYN,HOYT STREET,,Closed,,The Police Department responded to the complaint and with the information available observed no evidence of the violation at that time.,01/16/2025 11:23:51 PM,06 BROOKLYN,3004090035,BROOKLYN,986997,188181,ONLINE,Unspecified,BROOKLYN,,,,,,,,40.68318971606619,-73.99009557370466,\"(40.68318971606619, -73.99009557370466)\"\r\n63737591,01/12/2025 02:54:12 PM,01/15/2025 04:44:41 PM,HPD,Department of Housing Preservation and Development,HEAT/HOT WATER,ENTIRE BUILDING,RESIDENTIAL BUILDING,11354,37-18 BOWNE STREET,BOWNE STREET,,,,,ADDRESS,FLUSHING,,,Closed,,\"This complaint is a duplicate of a building-wide condition already reported by another tenant.  The original complaint is still open,...\",01/15/2025 12:00:00 AM,07 QUEENS,4050110029,QUEENS,1032668,217211,MOBILE,Unspecified,QUEENS,,,,,,,,40.76273787864091,-73.82521821096665,\"(40.76273787864091, -73.82521821096665)\"\r\n63721283,01/10/2025 06:27:34 PM,01/10/2025 06:43:54 PM,NYPD,New York City Police Department,Illegal Parking,Posted Parking Sign Violation,Street/Sidewalk,11215,277 19 STREET,19 STREET,5 AVENUE,6 AVENUE,5 AVENUE,6 AVENUE,ADDRESS,BROOKLYN,19 STREET,,Closed,,The Police Department responded to the complaint and determined that police action was not necessary.,01/10/2025 06:43:57 PM,07 BROOKLYN,3008797502,BROOKLYN,986758,180351,ONLINE,Unspecified,BROOKLYN,,,,,,,,40.66169819340059,-73.99096021184818,\"(40.66169819340059, -73.99096021184818)\"\r\n63637670,01/05/2025 01:02:24 PM,01/07/2025 06:50:18 PM,HPD,Department of Housing Preservation and Development,HEAT/HOT WATER,ENTIRE BUILDING,RESIDENTIAL BUILDING,11230,1360 OCEAN PARKWAY,OCEAN PARKWAY,,,,,ADDRESS,BROOKLYN,,,Closed,,\"This complaint is a duplicate of a building-wide condition already reported by another tenant.  The original complaint is still open,...\",01/07/2025 12:00:00 AM,12 BROOKLYN,3065680033,BROOKLYN,992896,163566,ONLINE,Unspecified,BROOKLYN,,,,,,,,40.615623092362476,-73.96885802937882,\"(40.615623092362476, -73.96885802937882)\"\r\n63598304,01/02/2025 11:06:33 PM,01/02/2025 11:07:18 PM,NYPD,New York City Police Department,Noise - Residential,Loud Music/Party,Residential Building/House,10466,655 EAST  230 STREET,EAST  230 STREET,CARPENTER AVENUE,LOWERRE PLACE,CARPENTER AVENUE,LOWERRE PLACE,ADDRESS,BRONX,EAST  230 STREET,,Closed,,The Police Department responded to the complaint and with the information available observed no evidence of the violation at that time.,01/02/2025 11:07:22 PM,12 BRONX,2048330028,BRONX,1022911,264242,MOBILE,Unspecified,BRONX,,,,,,,,40.89187241649303,-73.86016845296459,\"(40.89187241649303, -73.86016845296459)\"\r\n63596744,01/02/2025 11:24:09 AM,01/03/2025 01:31:49 PM,HPD,Department of Housing Preservation and Development,HEAT/HOT WATER,ENTIRE BUILDING,RESIDENTIAL BUILDING,10302,285 HEBERTON AVENUE,HEBERTON AVENUE,,,,,ADDRESS,STATEN ISLAND,,,Closed,,The Department of Housing Preservation and Development was not able to gain access to your apartment or others in the building to...,01/03/2025 12:00:00 AM,01 STATEN ISLAND,5010310021,STATEN ISLAND,947242,170235,PHONE,Unspecified,STATEN ISLAND,,,,,,,,40.63385500940301,-74.1333353382275,\"(40.63385500940301, -74.1333353382275)\"\r\n"
+}

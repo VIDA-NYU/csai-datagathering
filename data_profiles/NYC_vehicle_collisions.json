@@ -1,0 +1,1018 @@
+{
+    "size": 456361850,
+    "nb_rows": 2161036,
+    "average_row_size": 211.17734734636537,
+    "nb_profiled_rows": 23677,
+    "nb_columns": 29,
+    "columns": [
+        {
+            "name": "CRASH DATE",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/DateTime"
+            ],
+            "num_distinct_values": 4528
+        },
+        {
+            "name": "CRASH TIME",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "num_distinct_values": 1396
+        },
+        {
+            "name": "BOROUGH",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.3141445284453267,
+            "num_distinct_values": 5
+        },
+        {
+            "name": "ZIP CODE",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.3142712336867002,
+            "num_distinct_values": 200,
+            "mean": 10847.920731707318,
+            "stddev": 551.6489994213331,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 10003.0,
+                        "lte": 10471.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 11102.0,
+                        "lte": 11237.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 11355.0,
+                        "lte": 11436.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LATITUDE",
+            "structural_type": "http://schema.org/Float",
+            "semantic_types": [
+                "http://schema.org/latitude"
+            ],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.11403471723613634,
+            "mean": 40.62669228023082,
+            "stddev": 1.9874168911320151,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 40.58478,
+                        "lte": 40.7317065
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 40.7428752,
+                        "lte": 40.87931
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LONGITUDE",
+            "structural_type": "http://schema.org/Float",
+            "semantic_types": [
+                "http://schema.org/longitude"
+            ],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.11403471723613634,
+            "mean": -73.74997226002304,
+            "stddev": 3.71151768093179,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": -74.03375,
+                        "lte": -73.7656912
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LOCATION",
+            "structural_type": "http://schema.org/GeoCoordinates",
+            "semantic_types": [],
+            "point_format": "lat,long",
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.11403471723613634
+        },
+        {
+            "name": "ON STREET NAME",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [],
+            "missing_values_ratio": 0.21789078008193605,
+            "num_distinct_values": 4023
+        },
+        {
+            "name": "CROSS STREET NAME",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [],
+            "missing_values_ratio": 0.38459264264898424,
+            "num_distinct_values": 4840
+        },
+        {
+            "name": "OFF STREET NAME",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Text"
+            ],
+            "missing_values_ratio": 0.827596401571145
+        },
+        {
+            "name": "NUMBER OF PERSONS INJURED",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [],
+            "unclean_values_ratio": 0.0,
+            "num_distinct_values": 14,
+            "mean": 0.3236896566287959,
+            "stddev": 0.7065314265752286,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 0.0,
+                        "lte": 0.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 1.0,
+                        "lte": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NUMBER OF PERSONS KILLED",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [
+                "http://schema.org/Boolean"
+            ],
+            "unclean_values_ratio": 8.447016091565654e-05,
+            "num_distinct_values": 4,
+            "mean": 0.00122481733327702,
+            "stddev": 0.03951199563980249,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 0.0,
+                        "lte": 0.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NUMBER OF PEDESTRIANS INJURED",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [
+                "http://schema.org/Boolean"
+            ],
+            "unclean_values_ratio": 0.0014782278160239896,
+            "num_distinct_values": 5,
+            "mean": 0.0581154707099717,
+            "stddev": 0.24247191692669734,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 0.0,
+                        "lte": 0.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NUMBER OF PEDESTRIANS KILLED",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [
+                "http://schema.org/Boolean"
+            ],
+            "unclean_values_ratio": 0.0,
+            "num_distinct_values": 2,
+            "mean": 0.0005068209654939393,
+            "stddev": 0.022506978873290173,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 0.0,
+                        "lte": 0.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NUMBER OF CYCLIST INJURED",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [
+                "http://schema.org/Boolean"
+            ],
+            "unclean_values_ratio": 0.0005068209654939393,
+            "num_distinct_values": 4,
+            "mean": 0.02956455632047979,
+            "stddev": 0.1728382931611697,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 0.0,
+                        "lte": 0.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NUMBER OF CYCLIST KILLED",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [
+                "http://schema.org/Boolean"
+            ],
+            "unclean_values_ratio": 0.0,
+            "num_distinct_values": 2,
+            "mean": 8.447016091565654e-05,
+            "stddev": 0.009190376798998832,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 0.0,
+                        "lte": 0.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NUMBER OF MOTORIST INJURED",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [],
+            "unclean_values_ratio": 0.0,
+            "num_distinct_values": 14,
+            "mean": 0.23161718123073025,
+            "stddev": 0.6690918370398026,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 0.0,
+                        "lte": 0.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 1.0,
+                        "lte": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NUMBER OF MOTORIST KILLED",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [
+                "http://schema.org/Boolean"
+            ],
+            "unclean_values_ratio": 8.447016091565654e-05,
+            "num_distinct_values": 4,
+            "mean": 0.000633526206867424,
+            "stddev": 0.031160961074305958,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 0.0,
+                        "lte": 0.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "CONTRIBUTING FACTOR VEHICLE 1",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.0037589221607467163,
+            "num_distinct_values": 54
+        },
+        {
+            "name": "CONTRIBUTING FACTOR VEHICLE 2",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.15800143599273556,
+            "num_distinct_values": 45
+        },
+        {
+            "name": "CONTRIBUTING FACTOR VEHICLE 3",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.9265109600033788,
+            "num_distinct_values": 22
+        },
+        {
+            "name": "CONTRIBUTING FACTOR VEHICLE 4",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.9826836170122905,
+            "num_distinct_values": 8
+        },
+        {
+            "name": "CONTRIBUTING FACTOR VEHICLE 5",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.9945939097013979,
+            "num_distinct_values": 4
+        },
+        {
+            "name": "COLLISION_ID",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [
+                "http://schema.org/identifier"
+            ],
+            "unclean_values_ratio": 0.0,
+            "num_distinct_values": 23677,
+            "mean": 3224843.1872703466,
+            "stddev": 1508330.579649254,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 20531.0,
+                        "lte": 1016936.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 2929475.0,
+                        "lte": 3861422.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 3948730.0,
+                        "lte": 4755486.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VEHICLE TYPE CODE 1",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.006081851585927271,
+            "num_distinct_values": 124
+        },
+        {
+            "name": "VEHICLE TYPE CODE 2",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.19685771001393756,
+            "num_distinct_values": 137
+        },
+        {
+            "name": "VEHICLE TYPE CODE 3",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.929171770072222,
+            "num_distinct_values": 33
+        },
+        {
+            "name": "VEHICLE TYPE CODE 4",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Enumeration"
+            ],
+            "missing_values_ratio": 0.9834016133800735,
+            "num_distinct_values": 27
+        },
+        {
+            "name": "VEHICLE TYPE CODE 5",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [],
+            "missing_values_ratio": 0.9948473201841449,
+            "num_distinct_values": 14
+        }
+    ],
+    "nb_spatial_columns": 3,
+    "nb_temporal_columns": 1,
+    "nb_categorical_columns": 11,
+    "nb_numerical_columns": 10,
+    "types": [
+        "categorical",
+        "numerical",
+        "spatial",
+        "temporal"
+    ],
+    "spatial_coverage": [
+        {
+            "type": "latlong",
+            "column_names": [
+                "LATITUDE",
+                "LONGITUDE"
+            ],
+            "column_indexes": [
+                4,
+                5
+            ],
+            "geohashes4": [
+                {
+                    "hash": "121130231323",
+                    "number": 1201
+                },
+                {
+                    "hash": "121130231321",
+                    "number": 1830
+                },
+                {
+                    "hash": "121130231320",
+                    "number": 1255
+                },
+                {
+                    "hash": "121130231322",
+                    "number": 246
+                },
+                {
+                    "hash": "121130231300",
+                    "number": 316
+                },
+                {
+                    "hash": "121130231302",
+                    "number": 596
+                },
+                {
+                    "hash": "121130231303",
+                    "number": 94
+                },
+                {
+                    "hash": "121130231330",
+                    "number": 1781
+                },
+                {
+                    "hash": "121130231331",
+                    "number": 2391
+                },
+                {
+                    "hash": "121130231333",
+                    "number": 1131
+                },
+                {
+                    "hash": "121130231332",
+                    "number": 932
+                },
+                {
+                    "hash": "121130231312",
+                    "number": 255
+                },
+                {
+                    "hash": "121130231313",
+                    "number": 72
+                },
+                {
+                    "hash": "121130231231",
+                    "number": 603
+                },
+                {
+                    "hash": "121130231233",
+                    "number": 51
+                },
+                {
+                    "hash": "121130231232",
+                    "number": 3
+                },
+                {
+                    "hash": "121130231211",
+                    "number": 224
+                },
+                {
+                    "hash": "121130231213",
+                    "number": 98
+                },
+                {
+                    "hash": "121130231210",
+                    "number": 98
+                },
+                {
+                    "hash": "121130231032",
+                    "number": 106
+                },
+                {
+                    "hash": "121130231033",
+                    "number": 17
+                },
+                {
+                    "hash": "121130231023",
+                    "number": 18
+                },
+                {
+                    "hash": "121130231122",
+                    "number": 10
+                },
+                {
+                    "hash": "121130233101",
+                    "number": 812
+                },
+                {
+                    "hash": "121130233103",
+                    "number": 126
+                },
+                {
+                    "hash": "121130233100",
+                    "number": 31
+                },
+                {
+                    "hash": "121130233102",
+                    "number": 1
+                },
+                {
+                    "hash": "121130233111",
+                    "number": 616
+                },
+                {
+                    "hash": "121130233110",
+                    "number": 890
+                },
+                {
+                    "hash": "121130233112",
+                    "number": 147
+                },
+                {
+                    "hash": "121130233113",
+                    "number": 110
+                },
+                {
+                    "hash": "121130233011",
+                    "number": 138
+                },
+                {
+                    "hash": "121130233013",
+                    "number": 1
+                },
+                {
+                    "hash": "121130320220",
+                    "number": 1247
+                },
+                {
+                    "hash": "121130320223",
+                    "number": 1395
+                },
+                {
+                    "hash": "121130320222",
+                    "number": 510
+                },
+                {
+                    "hash": "121130320221",
+                    "number": 612
+                },
+                {
+                    "hash": "121130320232",
+                    "number": 721
+                },
+                {
+                    "hash": "121130320230",
+                    "number": 12
+                },
+                {
+                    "hash": "121130322001",
+                    "number": 84
+                },
+                {
+                    "hash": "121130322000",
+                    "number": 106
+                },
+                {
+                    "hash": "121130322010",
+                    "number": 39
+                },
+                {
+                    "hash": "033333333333",
+                    "number": 50
+                }
+            ],
+            "ranges": [
+                {
+                    "range": {
+                        "type": "envelope",
+                        "coordinates": [
+                            [
+                                -74.120926,
+                                40.7617706
+                            ],
+                            [
+                                -73.88788,
+                                40.583534
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "range": {
+                        "type": "envelope",
+                        "coordinates": [
+                            [
+                                -73.9499388,
+                                40.878284
+                            ],
+                            [
+                                -73.74467,
+                                40.6703738
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "number": 20976
+        },
+        {
+            "type": "point_latlong",
+            "column_names": [
+                "LOCATION"
+            ],
+            "column_indexes": [
+                6
+            ],
+            "geohashes4": [
+                {
+                    "hash": "121130231323",
+                    "number": 1201
+                },
+                {
+                    "hash": "121130231321",
+                    "number": 1830
+                },
+                {
+                    "hash": "121130231320",
+                    "number": 1255
+                },
+                {
+                    "hash": "121130231322",
+                    "number": 246
+                },
+                {
+                    "hash": "121130231300",
+                    "number": 316
+                },
+                {
+                    "hash": "121130231302",
+                    "number": 596
+                },
+                {
+                    "hash": "121130231303",
+                    "number": 94
+                },
+                {
+                    "hash": "121130231330",
+                    "number": 1781
+                },
+                {
+                    "hash": "121130231331",
+                    "number": 2391
+                },
+                {
+                    "hash": "121130231333",
+                    "number": 1131
+                },
+                {
+                    "hash": "121130231332",
+                    "number": 932
+                },
+                {
+                    "hash": "121130231312",
+                    "number": 255
+                },
+                {
+                    "hash": "121130231313",
+                    "number": 72
+                },
+                {
+                    "hash": "121130231231",
+                    "number": 603
+                },
+                {
+                    "hash": "121130231233",
+                    "number": 51
+                },
+                {
+                    "hash": "121130231232",
+                    "number": 3
+                },
+                {
+                    "hash": "121130231211",
+                    "number": 224
+                },
+                {
+                    "hash": "121130231213",
+                    "number": 98
+                },
+                {
+                    "hash": "121130231210",
+                    "number": 98
+                },
+                {
+                    "hash": "121130231032",
+                    "number": 106
+                },
+                {
+                    "hash": "121130231033",
+                    "number": 17
+                },
+                {
+                    "hash": "121130231023",
+                    "number": 18
+                },
+                {
+                    "hash": "121130231122",
+                    "number": 10
+                },
+                {
+                    "hash": "121130233101",
+                    "number": 812
+                },
+                {
+                    "hash": "121130233103",
+                    "number": 126
+                },
+                {
+                    "hash": "121130233100",
+                    "number": 31
+                },
+                {
+                    "hash": "121130233102",
+                    "number": 1
+                },
+                {
+                    "hash": "121130233111",
+                    "number": 616
+                },
+                {
+                    "hash": "121130233110",
+                    "number": 890
+                },
+                {
+                    "hash": "121130233112",
+                    "number": 147
+                },
+                {
+                    "hash": "121130233113",
+                    "number": 110
+                },
+                {
+                    "hash": "121130233011",
+                    "number": 138
+                },
+                {
+                    "hash": "121130233013",
+                    "number": 1
+                },
+                {
+                    "hash": "121130320220",
+                    "number": 1247
+                },
+                {
+                    "hash": "121130320223",
+                    "number": 1395
+                },
+                {
+                    "hash": "121130320222",
+                    "number": 510
+                },
+                {
+                    "hash": "121130320221",
+                    "number": 612
+                },
+                {
+                    "hash": "121130320232",
+                    "number": 721
+                },
+                {
+                    "hash": "121130320230",
+                    "number": 12
+                },
+                {
+                    "hash": "121130322001",
+                    "number": 84
+                },
+                {
+                    "hash": "121130322000",
+                    "number": 106
+                },
+                {
+                    "hash": "121130322010",
+                    "number": 39
+                },
+                {
+                    "hash": "033333333333",
+                    "number": 50
+                }
+            ],
+            "ranges": [
+                {
+                    "range": {
+                        "type": "envelope",
+                        "coordinates": [
+                            [
+                                -74.120926,
+                                40.7617706
+                            ],
+                            [
+                                -73.88788,
+                                40.583534
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "range": {
+                        "type": "envelope",
+                        "coordinates": [
+                            [
+                                -73.9499388,
+                                40.878284
+                            ],
+                            [
+                                -73.74467,
+                                40.6703738
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "number": 20976
+        }
+    ],
+    "temporal_coverage": [
+        {
+            "type": "datetime",
+            "column_names": [
+                "CRASH DATE"
+            ],
+            "column_indexes": [
+                0
+            ],
+            "column_types": [
+                "http://schema.org/DateTime"
+            ],
+            "ranges": [
+                {
+                    "range": {
+                        "gte": 1347840000.0,
+                        "lte": 1458691200.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 1469664000.0,
+                        "lte": 1581033600.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 1601510400.0,
+                        "lte": 1732838400.0
+                    }
+                }
+            ],
+            "temporal_resolution": "day"
+        }
+    ],
+    "attribute_keywords": [
+        "CRASH DATE",
+        "CRASH",
+        "DATE",
+        "CRASH TIME",
+        "CRASH",
+        "TIME",
+        "BOROUGH",
+        "ZIP CODE",
+        "ZIP",
+        "CODE",
+        "LATITUDE",
+        "LONGITUDE",
+        "LOCATION",
+        "ON STREET NAME",
+        "ON",
+        "STREET",
+        "NAME",
+        "CROSS STREET NAME",
+        "CROSS",
+        "STREET",
+        "NAME",
+        "OFF STREET NAME",
+        "OFF",
+        "STREET",
+        "NAME",
+        "NUMBER OF PERSONS INJURED",
+        "NUMBER",
+        "OF",
+        "PERSONS",
+        "INJURED",
+        "NUMBER OF PERSONS KILLED",
+        "NUMBER",
+        "OF",
+        "PERSONS",
+        "KILLED",
+        "NUMBER OF PEDESTRIANS INJURED",
+        "NUMBER",
+        "OF",
+        "PEDESTRIANS",
+        "INJURED",
+        "NUMBER OF PEDESTRIANS KILLED",
+        "NUMBER",
+        "OF",
+        "PEDESTRIANS",
+        "KILLED",
+        "NUMBER OF CYCLIST INJURED",
+        "NUMBER",
+        "OF",
+        "CYCLIST",
+        "INJURED",
+        "NUMBER OF CYCLIST KILLED",
+        "NUMBER",
+        "OF",
+        "CYCLIST",
+        "KILLED",
+        "NUMBER OF MOTORIST INJURED",
+        "NUMBER",
+        "OF",
+        "MOTORIST",
+        "INJURED",
+        "NUMBER OF MOTORIST KILLED",
+        "NUMBER",
+        "OF",
+        "MOTORIST",
+        "KILLED",
+        "CONTRIBUTING FACTOR VEHICLE 1",
+        "CONTRIBUTING",
+        "FACTOR",
+        "VEHICLE",
+        "1",
+        "CONTRIBUTING FACTOR VEHICLE 2",
+        "CONTRIBUTING",
+        "FACTOR",
+        "VEHICLE",
+        "2",
+        "CONTRIBUTING FACTOR VEHICLE 3",
+        "CONTRIBUTING",
+        "FACTOR",
+        "VEHICLE",
+        "3",
+        "CONTRIBUTING FACTOR VEHICLE 4",
+        "CONTRIBUTING",
+        "FACTOR",
+        "VEHICLE",
+        "4",
+        "CONTRIBUTING FACTOR VEHICLE 5",
+        "CONTRIBUTING",
+        "FACTOR",
+        "VEHICLE",
+        "5",
+        "COLLISION_ID",
+        "COLLISION",
+        "ID",
+        "VEHICLE TYPE CODE 1",
+        "VEHICLE",
+        "TYPE",
+        "CODE",
+        "1",
+        "VEHICLE TYPE CODE 2",
+        "VEHICLE",
+        "TYPE",
+        "CODE",
+        "2",
+        "VEHICLE TYPE CODE 3",
+        "VEHICLE",
+        "TYPE",
+        "CODE",
+        "3",
+        "VEHICLE TYPE CODE 4",
+        "VEHICLE",
+        "TYPE",
+        "CODE",
+        "4",
+        "VEHICLE TYPE CODE 5",
+        "VEHICLE",
+        "TYPE",
+        "CODE",
+        "5"
+    ]
+}

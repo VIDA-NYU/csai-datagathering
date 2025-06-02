@@ -1,0 +1,808 @@
+{
+    "size": 1093190,
+    "nb_rows": 4025,
+    "average_row_size": 271.6,
+    "nb_profiled_rows": 4025,
+    "nb_columns": 10,
+    "columns": [
+        {
+            "name": "the_geom",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/Text"
+            ],
+            "missing_values_ratio": 0.01093167701863354,
+            "plot": {
+                "type": "histogram_text",
+                "data": [
+                    {
+                        "bin": "40",
+                        "count": 15038
+                    },
+                    {
+                        "bin": "73",
+                        "count": 13097
+                    },
+                    {
+                        "bin": "multilinestring",
+                        "count": 3981
+                    },
+                    {
+                        "bin": "74",
+                        "count": 1941
+                    },
+                    {
+                        "bin": "80784387845178",
+                        "count": 4
+                    }
+                ]
+            }
+        },
+        {
+            "name": "OBJECTID",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [
+                "http://schema.org/identifier"
+            ],
+            "unclean_values_ratio": 0.0,
+            "num_distinct_values": 4025,
+            "mean": 2013.0,
+            "stddev": 1161.9173808838561,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 69.0,
+                        "lte": 1294.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 1430.0,
+                        "lte": 2637.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 2771.0,
+                        "lte": 3959.0
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 403,
+                        "bin_start": 1.0,
+                        "bin_end": 403.4
+                    },
+                    {
+                        "count": 402,
+                        "bin_start": 403.4,
+                        "bin_end": 805.8
+                    },
+                    {
+                        "count": 403,
+                        "bin_start": 805.8,
+                        "bin_end": 1208.1999999999998
+                    },
+                    {
+                        "count": 402,
+                        "bin_start": 1208.1999999999998,
+                        "bin_end": 1610.6
+                    },
+                    {
+                        "count": 402,
+                        "bin_start": 1610.6,
+                        "bin_end": 2013.0
+                    },
+                    {
+                        "count": 403,
+                        "bin_start": 2013.0,
+                        "bin_end": 2415.3999999999996
+                    },
+                    {
+                        "count": 402,
+                        "bin_start": 2415.3999999999996,
+                        "bin_end": 2817.7999999999997
+                    },
+                    {
+                        "count": 403,
+                        "bin_start": 2817.7999999999997,
+                        "bin_end": 3220.2
+                    },
+                    {
+                        "count": 402,
+                        "bin_start": 3220.2,
+                        "bin_end": 3622.6
+                    },
+                    {
+                        "count": 403,
+                        "bin_start": 3622.6,
+                        "bin_end": 4025.0
+                    }
+                ]
+            }
+        },
+        {
+            "name": "on_street",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [],
+            "num_distinct_values": 2182
+        },
+        {
+            "name": "from_stree",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [],
+            "num_distinct_values": 1942
+        },
+        {
+            "name": "to_street",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [],
+            "missing_values_ratio": 0.0002484472049689441,
+            "num_distinct_values": 2045
+        },
+        {
+            "name": "humps",
+            "structural_type": "http://schema.org/Integer",
+            "semantic_types": [],
+            "unclean_values_ratio": 0.0,
+            "num_distinct_values": 10,
+            "mean": 1.369192546583851,
+            "stddev": 0.7232397566053218,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 1.0,
+                        "lte": 1.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 2.0,
+                        "lte": 2.0
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 1,
+                        "bin_start": 0.0,
+                        "bin_end": 0.9
+                    },
+                    {
+                        "count": 2850,
+                        "bin_start": 0.9,
+                        "bin_end": 1.8
+                    },
+                    {
+                        "count": 988,
+                        "bin_start": 1.8,
+                        "bin_end": 2.7
+                    },
+                    {
+                        "count": 125,
+                        "bin_start": 2.7,
+                        "bin_end": 3.6
+                    },
+                    {
+                        "count": 35,
+                        "bin_start": 3.6,
+                        "bin_end": 4.5
+                    },
+                    {
+                        "count": 8,
+                        "bin_start": 4.5,
+                        "bin_end": 5.4
+                    },
+                    {
+                        "count": 8,
+                        "bin_start": 5.4,
+                        "bin_end": 6.3
+                    },
+                    {
+                        "count": 1,
+                        "bin_start": 6.3,
+                        "bin_end": 7.2
+                    },
+                    {
+                        "count": 6,
+                        "bin_start": 7.2,
+                        "bin_end": 8.1
+                    },
+                    {
+                        "count": 3,
+                        "bin_start": 8.1,
+                        "bin_end": 9.0
+                    }
+                ]
+            }
+        },
+        {
+            "name": "date_insta",
+            "structural_type": "http://schema.org/Text",
+            "semantic_types": [
+                "http://schema.org/DateTime"
+            ],
+            "num_distinct_values": 2065,
+            "plot": {
+                "type": "histogram_temporal",
+                "data": [
+                    {
+                        "count": 195,
+                        "date_start": "1996-08-01T00:00:00",
+                        "date_end": "1999-06-14T19:12:00"
+                    },
+                    {
+                        "count": 238,
+                        "date_start": "1999-06-14T19:12:00",
+                        "date_end": "2002-04-27T14:24:00"
+                    },
+                    {
+                        "count": 138,
+                        "date_start": "2002-04-27T14:24:00",
+                        "date_end": "2005-03-10T09:36:00"
+                    },
+                    {
+                        "count": 268,
+                        "date_start": "2005-03-10T09:36:00",
+                        "date_end": "2008-01-22T04:48:00"
+                    },
+                    {
+                        "count": 276,
+                        "date_start": "2008-01-22T04:48:00",
+                        "date_end": "2010-12-05T00:00:00"
+                    },
+                    {
+                        "count": 440,
+                        "date_start": "2010-12-05T00:00:00",
+                        "date_end": "2013-10-17T19:12:00"
+                    },
+                    {
+                        "count": 698,
+                        "date_start": "2013-10-17T19:12:00",
+                        "date_end": "2016-08-30T14:24:00"
+                    },
+                    {
+                        "count": 742,
+                        "date_start": "2016-08-30T14:24:00",
+                        "date_end": "2019-07-14T09:36:00"
+                    },
+                    {
+                        "count": 332,
+                        "date_start": "2019-07-14T09:36:00",
+                        "date_end": "2022-05-27T04:48:00"
+                    },
+                    {
+                        "count": 698,
+                        "date_start": "2022-05-27T04:48:00",
+                        "date_end": "2025-04-09T00:00:00"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Shape_STLe",
+            "structural_type": "http://schema.org/Float",
+            "semantic_types": [],
+            "unclean_values_ratio": 0.0,
+            "mean": 767.2958384451641,
+            "stddev": 603.3655259947117,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 258.073119397,
+                        "lte": 1073.64414014
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 3954,
+                        "bin_start": 0.0,
+                        "bin_end": 2256.42248063
+                    },
+                    {
+                        "count": 64,
+                        "bin_start": 2256.42248063,
+                        "bin_end": 4512.84496126
+                    },
+                    {
+                        "count": 5,
+                        "bin_start": 4512.84496126,
+                        "bin_end": 6769.26744189
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 6769.26744189,
+                        "bin_end": 9025.68992252
+                    },
+                    {
+                        "count": 1,
+                        "bin_start": 9025.68992252,
+                        "bin_end": 11282.11240315
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 11282.11240315,
+                        "bin_end": 13538.53488378
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 13538.53488378,
+                        "bin_end": 15794.957364409998
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 15794.957364409998,
+                        "bin_end": 18051.37984504
+                    },
+                    {
+                        "count": 0,
+                        "bin_start": 18051.37984504,
+                        "bin_end": 20307.80232567
+                    },
+                    {
+                        "count": 1,
+                        "bin_start": 20307.80232567,
+                        "bin_end": 22564.2248063
+                    }
+                ]
+            }
+        },
+        {
+            "name": "longitude",
+            "structural_type": "http://schema.org/Float",
+            "semantic_types": [
+                "http://schema.org/longitude"
+            ],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.01093167701863354,
+            "mean": -73.90934546457184,
+            "stddev": 0.0975664905476756,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": -74.00269109918817,
+                        "lte": -73.88674610915696
+                    }
+                },
+                {
+                    "range": {
+                        "gte": -73.8706954072122,
+                        "lte": -73.73226900783996
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 43,
+                        "bin_start": -74.24499003072722,
+                        "bin_end": -74.19061880115504
+                    },
+                    {
+                        "count": 92,
+                        "bin_start": -74.19061880115504,
+                        "bin_end": -74.13624757158286
+                    },
+                    {
+                        "count": 143,
+                        "bin_start": -74.13624757158286,
+                        "bin_end": -74.08187634201069
+                    },
+                    {
+                        "count": 70,
+                        "bin_start": -74.08187634201069,
+                        "bin_end": -74.0275051124385
+                    },
+                    {
+                        "count": 431,
+                        "bin_start": -74.0275051124385,
+                        "bin_end": -73.97313388286632
+                    },
+                    {
+                        "count": 950,
+                        "bin_start": -73.97313388286632,
+                        "bin_end": -73.91876265329414
+                    },
+                    {
+                        "count": 980,
+                        "bin_start": -73.91876265329414,
+                        "bin_end": -73.86439142372195
+                    },
+                    {
+                        "count": 703,
+                        "bin_start": -73.86439142372195,
+                        "bin_end": -73.81002019414979
+                    },
+                    {
+                        "count": 331,
+                        "bin_start": -73.81002019414979,
+                        "bin_end": -73.7556489645776
+                    },
+                    {
+                        "count": 238,
+                        "bin_start": -73.7556489645776,
+                        "bin_end": -73.70127773500542
+                    }
+                ]
+            }
+        },
+        {
+            "name": "latitude",
+            "structural_type": "http://schema.org/Float",
+            "semantic_types": [
+                "http://schema.org/latitude"
+            ],
+            "unclean_values_ratio": 0.0,
+            "missing_values_ratio": 0.01093167701863354,
+            "mean": 40.72402704454337,
+            "stddev": 0.09136561288759044,
+            "coverage": [
+                {
+                    "range": {
+                        "gte": 40.54407739686511,
+                        "lte": 40.66115639981568
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 40.66904579230842,
+                        "lte": 40.76916129740779
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 40.786782550431994,
+                        "lte": 40.89649480183292
+                    }
+                }
+            ],
+            "plot": {
+                "type": "histogram_numerical",
+                "data": [
+                    {
+                        "count": 51,
+                        "bin_start": 40.50215939181306,
+                        "bin_end": 40.54315147216197
+                    },
+                    {
+                        "count": 125,
+                        "bin_start": 40.54315147216197,
+                        "bin_end": 40.58414355251089
+                    },
+                    {
+                        "count": 404,
+                        "bin_start": 40.58414355251089,
+                        "bin_end": 40.6251356328598
+                    },
+                    {
+                        "count": 527,
+                        "bin_start": 40.6251356328598,
+                        "bin_end": 40.666127713208716
+                    },
+                    {
+                        "count": 879,
+                        "bin_start": 40.666127713208716,
+                        "bin_end": 40.70711979355763
+                    },
+                    {
+                        "count": 530,
+                        "bin_start": 40.70711979355763,
+                        "bin_end": 40.748111873906545
+                    },
+                    {
+                        "count": 406,
+                        "bin_start": 40.748111873906545,
+                        "bin_end": 40.78910395425546
+                    },
+                    {
+                        "count": 303,
+                        "bin_start": 40.78910395425546,
+                        "bin_end": 40.830096034604374
+                    },
+                    {
+                        "count": 492,
+                        "bin_start": 40.830096034604374,
+                        "bin_end": 40.87108811495329
+                    },
+                    {
+                        "count": 264,
+                        "bin_start": 40.87108811495329,
+                        "bin_end": 40.9120801953022
+                    }
+                ]
+            }
+        }
+    ],
+    "nb_spatial_columns": 2,
+    "nb_temporal_columns": 1,
+    "nb_numerical_columns": 3,
+    "types": [
+        "numerical",
+        "spatial",
+        "temporal"
+    ],
+    "spatial_coverage": [
+        {
+            "type": "latlong",
+            "column_names": [
+                "latitude",
+                "longitude"
+            ],
+            "column_indexes": [
+                9,
+                8
+            ],
+            "geohashes4": [
+                {
+                    "hash": "121130231321",
+                    "number": 457
+                },
+                {
+                    "hash": "121130231323",
+                    "number": 204
+                },
+                {
+                    "hash": "121130231320",
+                    "number": 238
+                },
+                {
+                    "hash": "121130231322",
+                    "number": 49
+                },
+                {
+                    "hash": "121130231302",
+                    "number": 141
+                },
+                {
+                    "hash": "121130231303",
+                    "number": 18
+                },
+                {
+                    "hash": "121130231300",
+                    "number": 98
+                },
+                {
+                    "hash": "121130231333",
+                    "number": 209
+                },
+                {
+                    "hash": "121130231332",
+                    "number": 242
+                },
+                {
+                    "hash": "121130231331",
+                    "number": 141
+                },
+                {
+                    "hash": "121130231330",
+                    "number": 142
+                },
+                {
+                    "hash": "121130231312",
+                    "number": 7
+                },
+                {
+                    "hash": "121130231313",
+                    "number": 1
+                },
+                {
+                    "hash": "121130231213",
+                    "number": 23
+                },
+                {
+                    "hash": "121130231211",
+                    "number": 49
+                },
+                {
+                    "hash": "121130231210",
+                    "number": 44
+                },
+                {
+                    "hash": "121130231231",
+                    "number": 120
+                },
+                {
+                    "hash": "121130231233",
+                    "number": 3
+                },
+                {
+                    "hash": "121130231032",
+                    "number": 42
+                },
+                {
+                    "hash": "121130231033",
+                    "number": 3
+                },
+                {
+                    "hash": "121130231023",
+                    "number": 11
+                },
+                {
+                    "hash": "121130233112",
+                    "number": 33
+                },
+                {
+                    "hash": "121130233110",
+                    "number": 165
+                },
+                {
+                    "hash": "121130233111",
+                    "number": 125
+                },
+                {
+                    "hash": "121130233113",
+                    "number": 49
+                },
+                {
+                    "hash": "121130233101",
+                    "number": 150
+                },
+                {
+                    "hash": "121130233103",
+                    "number": 41
+                },
+                {
+                    "hash": "121130233100",
+                    "number": 6
+                },
+                {
+                    "hash": "121130233011",
+                    "number": 58
+                },
+                {
+                    "hash": "121130320222",
+                    "number": 89
+                },
+                {
+                    "hash": "121130320220",
+                    "number": 156
+                },
+                {
+                    "hash": "121130320223",
+                    "number": 414
+                },
+                {
+                    "hash": "121130320221",
+                    "number": 94
+                },
+                {
+                    "hash": "121130320232",
+                    "number": 268
+                },
+                {
+                    "hash": "121130320230",
+                    "number": 10
+                },
+                {
+                    "hash": "121130322000",
+                    "number": 48
+                },
+                {
+                    "hash": "121130322001",
+                    "number": 29
+                },
+                {
+                    "hash": "121130322010",
+                    "number": 4
+                }
+            ],
+            "ranges": [
+                {
+                    "range": {
+                        "type": "envelope",
+                        "coordinates": [
+                            [
+                                -74.16574238419412,
+                                40.72327345980923
+                            ],
+                            [
+                                -73.91631325673151,
+                                40.54930745597164
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "range": {
+                        "type": "envelope",
+                        "coordinates": [
+                            [
+                                -73.95362762524242,
+                                40.89523106159338
+                            ],
+                            [
+                                -73.8303369829006,
+                                40.7493559845472
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "range": {
+                        "type": "envelope",
+                        "coordinates": [
+                            [
+                                -73.90380218297128,
+                                40.76802238778856
+                            ],
+                            [
+                                -73.73048545080532,
+                                40.603273306229084
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "number": 3981
+        }
+    ],
+    "temporal_coverage": [
+        {
+            "type": "datetime",
+            "column_names": [
+                "date_insta"
+            ],
+            "column_indexes": [
+                6
+            ],
+            "column_types": [
+                "http://schema.org/DateTime"
+            ],
+            "ranges": [
+                {
+                    "range": {
+                        "gte": 873072000.0,
+                        "lte": 1207094400.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 1269993600.0,
+                        "lte": 1505692800.0
+                    }
+                },
+                {
+                    "range": {
+                        "gte": 1527033600.0,
+                        "lte": 1727827200.0
+                    }
+                }
+            ],
+            "temporal_resolution": "day"
+        }
+    ],
+    "attribute_keywords": [
+        "the_geom",
+        "the",
+        "geom",
+        "OBJECTID",
+        "on_street",
+        "on",
+        "street",
+        "from_stree",
+        "from",
+        "stree",
+        "to_street",
+        "to",
+        "street",
+        "humps",
+        "date_insta",
+        "date",
+        "insta",
+        "Shape_STLe",
+        "Shape",
+        "STLe",
+        "longitude",
+        "latitude"
+    ],
+    "sample": "the_geom,OBJECTID,on_street,from_stree,to_street,humps,date_insta,Shape_STLe,longitude,latitude\r\n\"MULTILINESTRING ((-73.84068128290212 40.77861310329168, -73.84079635973474 40.77653569203649))\",114,128 STREET,25 AVENUE,23 AVENUE,1,05/06/2014,757.541674119,-73.84068128290212,40.77861310329168\r\n\"MULTILINESTRING ((-73.79574673549105 40.678249767529195, -73.79498595704999 40.67670019237658))\",190,145th St,119th Ave,120th Ave,1,06/14/2000,602.703665019,-73.79574673549105,40.678249767529195\r\n\"MULTILINESTRING ((-73.75444368802324 40.68890709161062, -73.75361769971778 40.687582395532374, -73.75290232945673 40.68643506075727))\",303,195 STREET,120 AVENUE,122 AVENUE,1,04/10/2013,996.92968224,-73.75444368802324,40.68890709161062\r\n\"MULTILINESTRING ((-73.78493618693594 40.77100610211033, -73.78407104281146 40.769314243203674))\",336,205 STREET,32 AVENUE,33 AVENUE,1,08/14/2014,661.343134233,-73.78493618693594,40.77100610211033\r\n\"MULTILINESTRING ((-73.97956332587333 40.669312974435606, -73.97720770348488 40.668168083702))\",680,5 STREET,7 AVENUE,8 AVENUE,2,10/08/2015,775.25201466,-73.97956332587333,40.669312974435606\r\n\"MULTILINESTRING ((-73.87480912660016 40.75480631257132, -73.87480201131594 40.75476760107894, -73.87462310981623 40.75378290093394,...\",1076,93 STREET,35 AVENUE,34 AVENUE,1,04/29/2014,716.069379322,-73.87480912660016,40.75480631257132\r\n\"MULTILINESTRING ((-73.81343384394714 40.82768567177968, -73.8149600353401 40.82948338855757))\",1555,CLARENCE AVENUE,SCHLEY AVENUE,RANDALL AVENUE,1,06/13/2007,779.349301643,-73.81343384394714,40.82768567177968\r\n\"MULTILINESTRING ((-73.92011935289455 40.8128938420069, -73.91851461376724 40.81221998416485, -73.91683795826361 40.81165621084603))\",1776,E 144 ST,WILLIS AVE,BROOK AVE,1,08/13/2001,1015.08721238,-73.92011935289455,40.8128938420069\r\n\"MULTILINESTRING ((-73.81255789417304 40.81943430487103, -73.81135777573996 40.819060081640984))\",1947,EAST 177th STREET,KEARNEY AVENUE,MEAGHER AVENUE,1,09/18/2013,359.067393835,-73.81255789417304,40.81943430487103\r\n\"MULTILINESTRING ((-73.9235652599261 40.642499298144735, -73.92341500236293 40.640923605633176, -73.92337418891474 40.640495544749456))\",2131,EAST 56 STREET,AVENUE D,WHITTY LANE,2,04/05/2023,731.945181155,-73.9235652599261,40.642499298144735\r\n\"MULTILINESTRING ((-73.92218442660544 40.63847729432678, -73.92217453760777 40.63839157713304, -73.9221042150676 40.63778220229334,...\",2140,EAST 57 STREET,FOSTER AVENUE,FARRAGUT ROAD,2,07/01/2021,878.609441527,-73.92218442660544,40.63847729432678\r\n\"MULTILINESTRING ((-73.76387900635704 40.691852491862605, -73.76322362674647 40.691324494551885, -73.76256141049728 40.69078471950285))\",2284,EVERITT PLACE,Linden Blvd,Baisley Blvd,1,06/26/2001,533.714011171,-73.76387900635704,40.691852491862605\r\n\"MULTILINESTRING ((-73.96635937275236 40.69566053446688, -73.9659053815794 40.69343307256073))\",2451,HALL ST,PARK AVE,MYRTLE AVE,2,09/01/1997,821.236968575,-73.96635937275236,40.69566053446688\r\n\"MULTILINESTRING ((-73.94127655215117 40.67918417994688, -73.93850818903397 40.67903431993909))\",2512,HERKIMER STREET,KINGSTON AVENUE,ALBANY AVENUE,1,05/29/2014,769.793213174,-73.94127655215117,40.67918417994688\r\n\"MULTILINESTRING ((-74.1059370230278 40.641356236222435, -74.10559659415408 40.63972953550073))\",2708,KISSELL AVENUE,LINDEN STREET,WALNUT STREET,2,04/26/2018,600.134737906,-74.1059370230278,40.641356236222435\r\n\"MULTILINESTRING ((-73.94541269043226 40.66043708603125, -73.94261168295043 40.66061034187579))\",2936,MIDWOOD STREET,KINGSTON AVENUE,BROOKLYN AVENUE,1,12/16/2019,779.684886173,-73.94541269043226,40.66043708603125\r\n\"MULTILINESTRING ((-73.94241655830406 40.61859269826823, -73.94238224079015 40.618413324347515, -73.94221251603037 40.61752605502803))\",3046,NEW YORK AVENUE,KINGS HWY,AVENUE N,1,08/08/2023,392.713104548,-73.94241655830406,40.61859269826823\r\n\"MULTILINESTRING ((-73.86163035597096 40.87685653363503, -73.86127707003129 40.87685735398808, -73.86087024221833 40.87685817355918,...\",3610,TILDEN STREET,BRONXWOOD AVENUE,BARNES AVENUE,1,07/13/2012,519.612404531,-73.86163035597096,40.87685653363503\r\n\"MULTILINESTRING ((-73.94831125411173 40.79812921787222, -73.94842336768737 40.798175540262825, -73.94891400678839 40.79837825859312,...\",3803,WEST 112th STREET,LENOX AVENUE,5th AVENUE,2,10/16/2018,1014.12744457,-73.94831125411173,40.79812921787222\r\n\"MULTILINESTRING ((-73.93423289678154 40.84613985757957, -73.93562172760916 40.84672662842151))\",3858,WEST 177th STREET,AUDUBON AVENUE,ST. NICHOLAS AV.,1,07/06/2015,439.717378027,-73.93423289678154,40.84613985757957\r\n"
+}
