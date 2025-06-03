@@ -36,8 +36,10 @@ To contribute a new dataset to this repository, follow these steps:
 
 **1. Metadata**
 
-- Create a ``YAML`` file describing the dataset and save it to [metadata/](./metadata).
-- Be sure to complete all required metadata fields.
+- Store dataset metadata as individual ``YAML`` files in the [metadata/](./metadata) directory.
+- Refer to the guide in [code/metadata_generators](./code/metadata_generators/) for how to create or generate a metadata file.
+- Ensure all required metadata fields (e.g., title, description, source, license) are completed.
+
 
 **2. Code**
 - **Metadata Generators:**
