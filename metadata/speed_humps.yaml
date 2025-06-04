@@ -24,9 +24,9 @@
   "temporal_resolution": "N/A"
   "time_column": ""
 "implementation":
-  "downloader_module": "downloaders.jknp-skuy"
-  "processor_module": "processors.jknp-skuy"
-  "example_notebook": "examples/jknp-skuy_example.ipynb"
+  "downloader_module": "downloaders.speed_humps"
+  "processor_module": "processors.speed_humps"
+  "example_notebook": "examples/speed_humps_example.ipynb"
 "integration_opportunities":
   "spatial_joins":
     - "NYC street centerlines"

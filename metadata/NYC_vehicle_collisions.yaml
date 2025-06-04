@@ -56,9 +56,9 @@
   "temporal_resolution": "N/A"
   "time_column": "CRASH DATE"
 "implementation":
-  "downloader_module": "downloaders.h9gi-nx95"
-  "processor_module": "processors.h9gi-nx95"
-  "example_notebook": "examples/h9gi-nx95_example.ipynb"
+  "downloader_module": "downloaders.NYC_vehicle_collisions"
+  "processor_module": "processors.NYC_vehicle_collisions"
+  "example_notebook": "examples/NYC_vehicle_collisions_example.ipynb"
 "integration_opportunities":
   "spatial_joins":
     - "NYC street centerline datasets"

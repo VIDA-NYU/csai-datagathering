@@ -27,9 +27,9 @@
   temporal_resolution: "daily"
   time_column: "created_date"
 "implementation":
-  "downloader_module": "downloaders.jrb2-thup"
-  "processor_module": "processors.jrb2-thup"
-  "example_notebook": "examples/jrb2-thup_example.ipynb"
+  "downloader_module": "downloaders.NYC_311"
+  "processor_module": "processors.NYC_311p"
+  "example_notebook": "examples/NYC_311_example.ipynb"
 "integration_opportunities":
   "spatial_joins":
     - "NYC neighborhood boundaries"

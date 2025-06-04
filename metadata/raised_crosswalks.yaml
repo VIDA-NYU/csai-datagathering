@@ -22,9 +22,9 @@
   "temporal_resolution": "N/A"
   "time_column": ""
 "implementation":
-  "downloader_module": "downloaders.uh2s-ftgh"
-  "processor_module": "processors.uh2s-ftgh"
-  "example_notebook": "examples/uh2s-ftgh_example.ipynb"
+  "downloader_module": "downloaders.raised_crosswalks"
+  "processor_module": "processors.raised_crosswalks"
+  "example_notebook": "examples/raised_crosswalks_example.ipynb"
 "integration_opportunities":
   "spatial_joins":
   - "street centerline datasets"
