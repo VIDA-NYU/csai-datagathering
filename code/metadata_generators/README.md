@@ -1,6 +1,16 @@
 # Metadata Generators
 
-This folder contains CLI-compatible Python scripts for generating standardized metadata YAML files for each dataset in the OSCUR-data repository. Each script is tailored to a specific dataset and uses a shared metadata template to structure the output.
+This folder contains CLI-compatible Python scripts for generating standardized metadata YAML files for each dataset in the OSCUR-data repository. The scripts use a base class architecture to ensure consistency while allowing dataset-specific customization.
+
+## Architecture
+
+The metadata generation system is built using an object-oriented approach with a base class that handles all common functionality, and individual dataset classes that inherit from it. This design eliminates code duplication and ensures consistency across all generators.
+
+### Base Class
+- `nyc_metadata_base.py` - Contains the `NYCMetadataGenerator` abstract base class with all shared functionality
+
+### Individual Dataset Scripts
+Each dataset has its own script that inherits from the base class and defines dataset-specific configuration.
 
 ## Folder Structure
 
@@ -8,78 +18,327 @@ This folder contains CLI-compatible Python scripts for generating standardized m
 code/metadata_generators/
 │
 ├── template_metadata.yaml         # YAML template used for generating all dataset metadata files
+├── nyc_metadata_base.py           # Base class with shared functionality
 ├── speed_humps.py                 # Script to generate metadata for the NYC Speed Humps dataset
 ├── raised_crosswalks.py           # Script to generate metadata for the NYC Raised Crosswalk dataset
 ├── NYC_vehicle_collisions.py      # Script to generate metadata for the NYC Vehicle Collisions dataset
-├── 311.py                         # Script to generate metadata for the NYC 311 Complaints dataset
+├── NYC_311.py                     # Script to generate metadata for the NYC 311 Service Requests dataset
 └── ...                            # Add one script per dataset as needed
 ```
 
 ## Usage
 
-Each script can be executed independently from the command line. The required argument is `--dataset_id`, which identifies the dataset and names the output metadata file.
+Each script can be executed independently from the command line. All scripts have sensible defaults configured, so you can run them without any arguments, or customize the parameters as needed.
 
-### To generate the metadata for:
+### Quick Usage (Recommended)
 
-The Speed Humps dataset:
+Using the pre-configured defaults:
 
 ```bash
-python speed_humps.py --dataset_id jknp-skuy --data_name speed_humps
+# Generate metadata for Speed Humps dataset
+python speed_humps.py
+
+# Generate metadata for Raised Crosswalks dataset
+python raised_crosswalks.py
+
+# Generate metadata for Vehicle Collisions dataset
+python NYC_vehicle_collisions.py
+
+# Generate metadata for NYC 311 dataset
+python NYC_311.py
 ```
 
-The Raised Crosswalk Locations dataset:
+### Advanced Usage
+
+You can override the defaults if needed:
 
 ```bash
+# Speed Humps dataset with custom parameters
+python speed_humps.py --dataset_id jknp-skuy --data_name speed_humps --output_dir ./custom_output
+
+# Raised Crosswalk Locations dataset
 python raised_crosswalks.py --dataset_id uh2s-ftgh --data_name raised_crosswalks
-```
 
-The Motor Vehicle Collisions - Crashes dataset:
-
-```bash
+# Motor Vehicle Collisions - Crashes dataset
 python NYC_vehicle_collisions.py --dataset_id h9gi-nx95 --data_name NYC_vehicle_collisions
+
+# NYC 311 Service Requests dataset
+python NYC_311.py --dataset_id jrb2-thup --data_name nyc_311
 ```
 
-The NYC 311 dataset:
+### Command Line Options
 
-```bash
-python NYC_311.py --dataset_id jrb2-thup --data_name NYC_311
-```
+All scripts support the following arguments:
 
+- `--dataset_id`: NYC Open Data dataset ID (each script has a sensible default)
+- `--data_name`: Custom name for the output file (each script has a sensible default)
+- `--output_dir`: Directory to save the YAML file (default: `../../metadata/`)
+- `--template`: Path to YAML template file (default: `template_metadata.yaml`)
 
-
-
-> The generated metadata files will follow the structure defined in `template_metadata.yaml` and can be saved in a `metadata/` directory or another specified output path.
+> The generated metadata files will follow the structure defined in `template_metadata.yaml` and will be saved in the `metadata/` directory by default.
 
 ## Template
 
 The `template_metadata.yaml` file defines the schema and default structure for all metadata files. It ensures consistency across datasets, including spatial, temporal, access, and processing metadata.
 
+## Base Class Features
+
+The `NYCMetadataGenerator` base class provides:
+
+- **Consistent API interaction** with NYC Open Data
+- **Automated geometry type detection** from dataset columns
+- **Standardized YAML generation** with proper formatting
+- **Error handling** for API requests
+- **Flexible configuration** through abstract properties
+- **Command-line interface** with sensible defaults
 
 ## Note on Generated YAML Metadata Files
-The metadata YAML files generated by the script provide an initial structured summary based on available dataset information from the NYC Open Data API or other sources, and your YAML template. However, some metadata fields may be incomplete or generic due to limited information in the source API.
+
+The metadata YAML files generated by the scripts provide an initial structured summary based on available dataset information from the NYC Open Data API and your YAML template. However, some metadata fields may be incomplete or generic due to limited information in the source API.
 
 Please review the generated YAML file carefully and manually fill in or update any missing or generic fields as needed.
 
 Common fields that might require manual editing include:
 
-- ``source_organization`` — official dataset owner or publisher
-
-- ``update_frequency`` — actual dataset update intervals
-
-- ``license`` — dataset licensing details
-
-- ``integration_opportunities`` — recommended related datasets or joins
-
-- ``map_algebra`` — suitability for rasterization, cell size, and interpolation method
-
+- **`source_organization`** — official dataset owner or publisher
+- **`update_frequency`** — actual dataset update intervals  
+- **`license`** — dataset licensing details
+- **`integration_opportunities`** — recommended related datasets or joins
+- **`map_algebra`** — suitability for rasterization, cell size, and interpolation method
 - Any other dataset-specific descriptive or technical details
 
 Ensuring these fields are complete and accurate will improve metadata quality and downstream usability.
 
+## Adding New Datasets
+
+To add a new dataset, create a simple script that inherits from the base class:
+
+### 1. Create a new Python file (e.g., `new_dataset.py`)
+
+```python
+from nyc_metadata_base import NYCMetadataGenerator
+
+"""
+NYC New Dataset Metadata Generator       
+Generates metadata for the NYC New Dataset.
+This script is part of the NYC Open Data project and is used to create
+metadata files for the New Dataset.
+"""
+
+class NewDatasetMetadataGenerator(NYCMetadataGenerator):
+    DEFAULT_DATASET_ID = "abc-123x"  # NYC OpenData dataset ID
+    DEFAULT_DATA_NAME = "new_dataset"
+    DATASET_DESCRIPTION = "NYC New Dataset description"
+
+def main():
+    generator = NewDatasetMetadataGenerator()
+    generator.run()
+
+if __name__ == "__main__":
+    main()
+```
+
+### 2. Update this README
+
+Add usage instructions for the new dataset:
+
+```bash
+# Generate metadata for New Dataset
+python new_dataset.py
+```
+
+## Dependencies
+
+- `requests` - for API calls to NYC Open Data
+- `PyYAML` - for YAML file processing
+- `argparse` - for command-line interface (built-in)
+- `datetime` - for timestamp processing (built-in)
 
 ## Contributing
 
-To add a new dataset:
-1. Duplicate one of the existing Python scripts (e.g., `speed_humps.py`).
-2. Customize it to reflect the metadata fields relevant to the new dataset.
-3. Add CLI instructions to this README for reproducibility.
+When contributing new dataset generators:
+
+1. Follow the established pattern using the base class
+2. Ensure proper dataset ID and naming conventions
+3. Update this README with usage instructions
+
+<details>
+<summary><strong>Adding Metadata Generators from Non-NYC Data Sources</strong></summary>
+
+<br>
+
+For datasets from other data sources (federal agencies, other cities, private APIs, etc.), you have several options:
+
+#### Option 1: Create a New Base Class
+
+If you have multiple datasets from the same source with similar APIs, create a new base class:
+
+```python
+# federal_data_base.py
+from abc import ABC, abstractmethod
+import requests
+import yaml
+import os
+from datetime import datetime
+from typing import Optional
+
+class FederalDataMetadataGenerator(ABC):
+    """Base class for federal data source metadata generators"""
+    
+    def __init__(self, template_path: str = "template_metadata.yaml"):
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        project_root = os.path.abspath(os.path.join(script_dir, "../../"))
+        self.default_output_dir = os.path.join(project_root, "metadata")
+        self.template_path = template_path
+    
+    @property
+    @abstractmethod
+    def DEFAULT_DATASET_ID(self) -> str:
+        pass
+    
+    @property
+    @abstractmethod
+    def DEFAULT_DATA_NAME(self) -> str:
+        pass
+    
+    @property
+    @abstractmethod
+    def DATASET_DESCRIPTION(self) -> str:
+        pass
+    
+    @property
+    @abstractmethod
+    def API_BASE_URL(self) -> str:
+        """Base URL for the data source API"""
+        pass
+    
+    def get_dataset_metadata(self, dataset_id: str) -> dict:
+        """Fetch dataset metadata - override for different API structures"""
+        url = f"{self.API_BASE_URL}/{dataset_id}"
+        response = requests.get(url)
+        response.raise_for_status()
+        return response.json()
+    
+    # ... implement other methods similar to NYCMetadataGenerator
+    # but adapted for the specific data source's API structure
+```
+
+Then create individual scripts:
+
+```python
+# census_demographics.py
+from federal_data_base import FederalDataMetadataGenerator
+
+class CensusDemographicsGenerator(FederalDataMetadataGenerator):
+    DEFAULT_DATASET_ID = "ACSDP5Y2021.DP05"
+    DEFAULT_DATA_NAME = "census_demographics"
+    DATASET_DESCRIPTION = "US Census Bureau Demographics dataset"
+    API_BASE_URL = "https://api.census.gov/data/2021/acs/acs5/profile"
+
+def main():
+    generator = CensusDemographicsGenerator()
+    generator.run()
+
+if __name__ == "__main__":
+    main()
+```
+
+#### Option 2: Standalone Scripts
+
+For one-off datasets or unique data sources, create standalone scripts:
+
+```python
+# custom_dataset.py
+import argparse
+import requests
+import yaml
+import os
+from datetime import datetime
+
+def generate_custom_metadata(dataset_id, output_dir, template_path, data_name):
+    """Generate metadata for custom data source"""
+    
+    # Load template
+    with open(template_path, "r", encoding="utf-8") as f:
+        template = yaml.safe_load(f)
+    
+    # Fetch data from custom API
+    response = requests.get(f"https://api.example.com/dataset/{dataset_id}")
+    data = response.json()
+    
+    # Populate template with custom logic
+    template["dataset_id"] = dataset_id
+    template["data_name"] = data_name
+    template["name"] = data.get("title", "")
+    # ... customize based on your data source's structure
+    
+    # Save metadata
+    os.makedirs(output_dir, exist_ok=True)
+    out_path = os.path.join(output_dir, f"{data_name}.yaml")
+    
+    with open(out_path, "w", encoding="utf-8") as f:
+        yaml.dump(template, f, sort_keys=False)
+    
+    print(f"✅ Metadata saved to {out_path}")
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Generate metadata for custom dataset")
+    parser.add_argument("--dataset_id", required=True)
+    parser.add_argument("--data_name", required=True)
+    parser.add_argument("--output_dir", default="../../metadata")
+    parser.add_argument("--template", default="template_metadata.yaml")
+    
+    args = parser.parse_args()
+    generate_custom_metadata(args.dataset_id, args.output_dir, args.template, args.data_name)
+```
+
+#### Option 3: Complex Datasets with Multiple Scripts
+
+For datasets requiring multiple processing steps or complex workflows, organize them in subdirectories:
+
+```
+code/metadata_generators/
+│
+├── template_metadata.yaml
+├── nyc_metadata_base.py
+├── speed_humps.py
+├── ...
+│
+├── complex_dataset_abc123/          # Subdirectory for complex dataset
+│   ├── __init__.py
+│   ├── main_generator.py           # Primary metadata generator
+│   ├── data_fetcher.py             # Handles data retrieval
+│   ├── data_processor.py           # Processes/transforms data
+│   ├── validation.py               # Validates data quality
+│   └── README.md                   # Dataset-specific documentation
+│
+└── federal_census_data/             # Another complex dataset
+    ├── __init__.py
+    ├── demographics_generator.py
+    ├── economic_generator.py
+    ├── housing_generator.py
+    └── README.md
+```
+
+Example usage for complex datasets:
+
+```bash
+# Run the main generator for complex dataset
+python complex_dataset_abc123/main_generator.py --dataset_id abc123 --data_name complex_dataset
+
+# Run specific generators for federal census data
+python federal_census_data/demographics_generator.py
+python federal_census_data/economic_generator.py
+python federal_census_data/housing_generator.py
+```
+
+#### Guidelines for Non-NYC Data Sources
+
+1. **Identify the API structure** of your data source and adapt the metadata extraction accordingly
+2. **Reuse the template** (`template_metadata.yaml`) for consistency across all datasets
+3. **Follow naming conventions**: Use descriptive names that indicate the data source
+4. **Document thoroughly**: Include comprehensive docstrings and README files for complex datasets
+5. **Handle errors gracefully**: Different APIs have different rate limits, authentication, and error responses
+6. **Update this README** with usage instructions for each new data source
+
+</details> 
